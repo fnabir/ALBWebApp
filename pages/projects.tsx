@@ -441,7 +441,7 @@ const Projects: NextPage = () => {
 
               <div className="col-md-6 col-lg-3 mb-2">
                 <div className="card card2">
-                  <div className={style.name}>SKAN CHayanir</div>
+                  <div className={style.name}>SKAN Chayanir</div>
                   <div className={style.place}>Chittagong</div>
                   <ul className={style.product}>
                     <li>Passenger Lift</li>
