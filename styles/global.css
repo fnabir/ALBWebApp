@@ -1,0 +1,247 @@
+*,::after,::before{box-sizing:border-box}
+
+html,body {padding: 0;margin: 0;font: 400 0.95rem/1.5 'Roboto', 'Oxygen', sans-serif;color: #fff;user-select: none;scroll-behavior: smooth;background-color: #fff;overflow-x: hidden;text-align: center}
+
+h1,h2,h3,h4,h5,h6 {margin-top:0;margin-bottom:.5rem}
+p{margin: 0.5rem auto}
+span{color:#1583e9}
+
+a {color: #fff;text-decoration: none;background-color: transparent}
+a:hover{color:#1583e9;text-decoration:none;transition: all .3s}
+a:hover.white{text-decoration: underline;color: #fff;transition: all .3s}
+ul {margin: 0;padding: 0}
+ol ul,ul ol,ul ul {margin-bottom: 0}
+ul li {list-style: none}
+
+img {height: auto;vertical-align: middle;border-style: none;pointer-events: none;overflow: hidden}
+svg {overflow: hidden;vertical-align: middle}
+iframe {width: 100%;height: 100%;border: none}
+
+section {position: relative;z-index:1;padding:2rem 0}
+hr{border:0;border-top: 6px solid #2699fb;border-radius:5px; width:50%}
+address {font-style: normal;text-align: left}
+
+.container {width: 100%;margin: 0 auto;padding: 10px}
+.row{display: flex;flex-wrap: wrap}
+
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-6,.col-lg-8,.col-lg-9.col-lg-10,.col-lg-12,
+.col-md-4,.col-md-6,.col-md-8,.col-md-10,.col-md-12 {position:relative;width: 100%}
+
+header{position:fixed;top:0;left:0;padding: 0 3%;width:100%;box-sizing:border-box;z-index:49;border-bottom:2px solid #fff}
+.logo{float:left;height: 45px; margin:22px 0 0px;pointer-events: auto}
+nav{float:right;z-index:-1}
+nav ul{display:flex;margin:0;padding:0}
+nav ul li, nav ul li a{display: block;color:#d4e6f6;font-size:1.15rem;text-align: center;margin:15px 8px;position: relative;}
+nav ul li.submenu{margin:30px 8px 20px}
+nav ul li a::after{clear: both;display: block;content: "";position: relative;width:0;left: 50%;height: 3px;background: #fff;border-radius: 6px;transition: all 0.5s;}
+nav ul li a:focus,nav ul li a:hover{color: #fff}
+nav ul li a:hover::after{width:100%;left:0}
+nav ul li ul{position: absolute;left: 0;display:block;background: #00224a;border-radius: 0.5rem;visibility: hidden;opacity:0;transition: visibility 0s, opacity 0.3s linear}
+nav ul li:hover ul{visibility: visible;opacity:1}
+nav ul li ul li{display: block;width: 180px;border-bottom: 1px solid rgba(242, 244, 248, 0.2)}
+nav ul li ul li:last-child {border-bottom: none}
+
+nav ul li ul li a {font-size: 1.1rem;text-align: left;line-height: 1.5rem;color:#d4e6f6}
+nav ul li a:focus,nav ul li a:hover {color:#fff}
+nav ul li.submenu::after{font-family: "icon";content: "\f107";padding-left: 0.3rem;-webkit-transition-duration: 500ms;transition-duration: 500ms}
+.nav-toggler {border: none;background-color: transparent;cursor: pointer;display: none;float: right;margin: 18px 0}
+.nav-toggler .toggle-icon {display: inline-block;cursor: pointer}
+.nav-toggler .toggle-icon span {position: relative;background-color: #fff;border-radius: 3px;display: block;height: 3px;margin-top: 5px;padding: 0;-webkit-transition-duration: 300ms;transition-duration: 300ms;width: 30px;cursor: pointer}
+.nav-toggler .toggle-icon.active span:nth-of-type(1) {-webkit-transform: rotate3d(0, 0, 1, 45deg);transform: rotate3d(0, 0, 1, 45deg);top:8px}
+.nav-toggler .toggle-icon.active span:nth-of-type(2) {opacity: 0}
+.nav-toggler .toggle-icon.active span:nth-of-type(3) {-webkit-transform: rotate3d(0, 0, 1, -45deg);transform: rotate3d(0, 0, 1,-45deg);top:-8px}
+
+.banner{width: 100%;position: relative;margin: 0;background-color: #001845;background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover}
+.banner-area{position: absolute;top: 55%;left: 50%;transform: translate3d(-50%,-50%,0);width: 90%}
+.banner-area h1{color: #fff;font-size: 3rem;line-height: 3.2rem; margin-bottom:1rem}
+.banner-area p{color: #ccc;font-size: 1.3rem}
+
+.breadcrumb {display: flex;flex-wrap: wrap;padding: 0.75rem 1rem;list-style: none;justify-content: center}
+.breadcrumb-item::before {padding-right: 0.3rem;font-family: "icon";content: "\e80b";color: #fff}
+.breadcrumb-item + .breadcrumb-item {padding-left: 0.3rem;}
+.breadcrumb-item + .breadcrumb-item::before {padding-right: 0.3rem;color: #999;font-family: "icon";content: "\f105";transform: translateY(1px);}
+.breadcrumb-item + .breadcrumb-item:hover::before {text-decoration: none;}
+.breadcrumb-item.active {color: #bbb;}
+
+input,textarea{opacity: 0.8;display: block;width:100%;height:2.5rem;padding:0.25rem;font: bold 1.2rem "Oxygen";margin-bottom:1.5rem;color: #1583e9;background-color: #fff;background-clip: padding-box;border: 1px solid #ced4da;border-radius: 0.25rem;transition:all 0.15s ease-in-out}
+textarea {resize: vertical;min-height:8rem;}
+input:focus,textarea:focus{outline: 0;box-shadow: 0 0 0 0.2rem #1583e9;opacity: 1}
+
+.btn{display: inline-block;font: 400 1rem/1.2rem "Oxygen";vertical-align: middle;border: 1px solid transparent;padding: 0.35rem 1.5rem;border-radius: 0.3rem;transition: 0.15s ease-in-out;outline:none;box-shadow: none;color:#fff}
+.btnPrimary{background-color: #0250c9;border-color: #2600fb}
+.btnPrimary:hover,.btn1:focus{color: #0250c9;background: #fff;box-shadow: 0 0 0.5rem #2699fb}
+
+.card{box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2),-8px -8px 18px 0 rgba(200, 200, 200, 0.2);height: 100%;margin:1rem;transition: all 0.3s ease-in-out}
+.card span {color: #1583e9}
+.card1 {background: transparent;border-radius: 1.2rem;padding: 1.3rem;color: #000;border: thick double #ccc}
+.card1:hover{border-color: #1583e9}
+.card1 i{color: #1583e9;font-size: 3.5rem}
+.card1 svg{height: 9rem;width: 90%; translate:0 100px;transition: 0.2s ease-in-out}
+.card1:hover svg{translate:0;transition: 0.2s ease-in-out}
+.card1 h3{font-size:1.9rem;font-weight: 600;margin-top: 1.5rem;translate:0 120px;transition: all 0.2s ease-in-out}
+.card1:hover h3{font-size:1.6rem;translate:0;transition: all 0.2s ease-in-out}
+.card1 p{color: #00000000;transition: 0.2s ease-in-out;}
+.card1:hover p{color: #000000;transition: 0.2s ease-in-out;transition-delay: 0.1s;}
+.card2 {border-radius: 30px;padding: 30px 30px 0;text-align: center;color: #000;background-color: #fff}
+.card2:hover{border-color: #1583e9}
+.number{color: #1583e9;font: 700 3.5rem/1.5 "Oxygen"}
+
+.cardBlack{padding: 1.5rem;height: 100%;background: rgba(0, 0, 0, 0.9);border-radius: 0.8rem}
+.cardBlack h2{color: #1583e9;font-size: 1.5rem;margin-bottom: 1.5rem}
+
+.cardBlack h3,.lets_text, .lets_info{font-size: 1.2rem}
+.lets_info a:hover{text-decoration: underline;color:#fff}
+.lets_text span,.lets_info span a{color: #abd3fa}
+
+footer{position: relative;padding: 3rem 0;border-bottom:2px solid #fff;border-top:2px solid #fff}
+.ft_logo{width:75%;max-height: 75px}
+.ft_title {font-size:1.5rem;margin: 1rem auto}
+footer ul li a {color: #d4e6f6;font-size: 1.1rem;line-height: 2.5rem;transition: all 0.3s ease;margin-bottom:2rem}
+.ft_ad ul li{display:table;line-height: 1.5;margin-bottom: 1rem;user-select:text;font-size:1rem}
+.ft_ad ul li i{display: table-cell;width:2rem;color:#fff}
+.social {text-align: center;width: 100%;margin-bottom: 2rem}
+.social a {margin: 0 0.5rem 0;color:#002855;display: inline-block;font-size: 1.3rem;width: 2.2rem;height: 2.2rem;border-radius: 1.1rem;line-height: 2.2rem;text-align:center;-webkit-transition: all 0.3s;transition: all 0.3s;vertical-align: center;background-color: #fff;justify-content:space-between;}
+.social a:hover{transform: scale(1.15);color: #fff}
+.social .fb:hover {background-color: #4460ae;}
+.social .yt:hover {background-color: #c21f25;}
+.social .in:hover {background-color: #C13584;}
+.social .li:hover {background-color: #007bb5;}
+.ft-copyright{padding:1rem 0;font-size: 1rem}
+.ft-copyright ul li{display:inline}
+.ft-copyright ul li:last-child::before{content:"\007c";color: #fff;margin: 0 5px}
+
+.legal h2{text-transform: uppercase;font: 700 1.1rem/2 'Oxygen';margin: 2rem auto 1rem}
+.legal p,.legal ul li{text-align:justify}
+.legal ul{margin:1rem 0 1rem 1rem}
+.legal ul li{margin-bottom:.8rem;list-style: disc}
+
+.h-100{height: 100vh}
+.h-60{height: 60vh}
+.w-75{width: 75%;margin-left: auto;margin-right: auto}
+.w-90{width: 90%;margin-left: auto;margin-right: auto}
+.w-100{width: 100%}
+.bgd{background:#001845}
+.bg{background:#091C35}
+.bgl{background: #112D55}
+.bgw{background: #fff;color:#000}
+.bgw1{background: #e6e6e6;color:#000}
+.bgw2{background: #ddd;color:#000}
+.borderw{border-color: #fff!important}
+.heading{font: 600 2rem 'Oxygen';margin-bottom: 2.5rem}
+.semihead{font-weight: 600;font-size: 2rem}
+.heading span{border-bottom:3px solid #2699fb;border-radius:3px}
+.subheading{color: #ffffffbb;font-size:1rem;max-width: 90%;margin:-1.2rem auto 2rem}
+.dark{color:#2699fb}
+.main{color: #1583e9}
+.black{color:#000}
+
+.justify-content-center {justify-content: center}
+.justify-content-around {justify-content: space-around}
+.align-items-center {align-items: center}
+.align-content-center {align-content: center}
+.align-content-between {align-content: space-between}
+.align-content-around {align-content: space-around}
+.text-center {text-align: center}
+.text-justify {text-align: justify}
+.text-left {text-align: left}
+
+.m-1{margin:1rem;}.mt-2{margin-top:2rem}.mt-3{margin-top:3rem}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}.p-2{padding:2rem;}.p-1{padding:0.5rem;}
+
+@font-face {
+  font-family: 'Oxygen';
+  src: url('./fonts/oxygen-regular.woff2') format('woff2'),
+       url('./fonts/oxygen-regular.woff') format('woff'),
+       url('./fonts/oxygen-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'icon';
+  src: url('./fonts/icon.woff2') format('woff2'),
+       url('./fonts/icon.woff') format('woff'),
+       url('./fonts/icon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.fi {font-family: 'icon';font-weight: normal;text-decoration: inherit;text-transform: none;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-style:normal;font-variant:normal;text-rendering:auto;line-height:inherit}
+
+.ic-phone:before{content:"\e801"}
+.ic-map:before{content:"\e804"}
+.ic-x:before{content:"\e805"}
+.ic-h:before{content:"\e807"}
+.ic-v:before{content:"\e808"}
+.ic-users:before{content:"\e809"}
+.ic-user:before{content:"\e80a"}
+.ic-home:before{content:"\e80b"}
+.ic-spin:before{content:"\e834"}
+.ic-fb:before{content:"\f09a"}
+.ic-menu:before{content:"\f0c9"}
+.ic-mail:before{content:"\f0e0"}
+.ic-li:before{content:"\f0e1"}
+.ic-yt:before{content:"\f16a"}
+.ic-build:before{content:"\f1ad"}
+.ic-wa:before{content:"\f232"}
+.ic-stop:before{content:"\f28d"}
+
+@media (min-width: 768px) {
+  .container {max-width: 720px}
+  .col-md-1 {flex: 0 0 8.33%;max-width: 8.33%}
+  .col-md-2 {flex: 0 0 16.66%;max-width: 16.66%}
+  .col-md-3 {flex: 0 0 25%;max-width: 25%}
+  .col-md-4 {flex: 0 0 33.33%;max-width: 33.33%}
+  .col-md-6 {flex: 0 0 50%;max-width: 50%}
+  .col-md-8 {flex: 0 0 66.66%;max-width: 66.66%}
+  .col-md-10 {flex: 0 0 83.33%;max-width: 83.33%}
+  .col-md-12 {flex: 0 0 100%;max-width: 100%}
+}
+
+@media (min-width: 992px) {
+  html,body {font-size: 1.05rem}
+  section {padding: 2rem 0}
+  .container {max-width: 960px}
+  .col-lg-1 {flex: 0 0 8.33%;max-width: 8.33%}
+  .col-lg-2 {flex: 0 0 16.66%;max-width: 16.66%}
+  .col-lg-3 {flex: 0 0 25%;max-width: 25%}
+  .col-lg-4 {flex: 0 0 33.33%;max-width: 33.33%}
+  .col-lg-6 {flex: 0 0 50%;max-width: 50%}
+  .col-lg-8 {flex: 0 0 66.66%;max-width: 66.66%}
+  .col-lg-9 {flex: 0 0 75%;max-width: 75%}
+  .col-lg-10 {flex: 0 0 83.33%;max-width: 83.33%}
+  .col-lg-12 {flex: 0 0 100%;max-width: 100%}
+  .heading{font: 700 3rem "Oxygen";margin-bottom: 3rem}
+  .subheading{font-size:1.2rem;margin-top:-1.5rem}
+  .btn{font: 400 1.2rem/1.5rem "Oxygen"}
+  .cardBlack h2{font-size: 2rem;margin-bottom: 2rem}
+  .cardBlack h3{font-size: 1.5rem;margin-bottom: 1rem}
+  .cardBlack p{margin-bottom: 1rem}
+  .number{font: 700 5rem/2.3 "Oxygen"}
+  .lets_text{font-size: 1.8rem;text-align: left}
+  .lets_info{text-align: right;font-size: 1.8rem}
+  .lets_info span {font-size: 1.4rem}
+  .legal h2{font-size: 1.25rem}
+}
+
+@media (min-width: 1200px) {
+  section {padding: 3rem 0 4rem}
+  .container {max-width: 1200px}
+  .ft-copyright{text-align:left}
+  .ft-copyright .links{text-align:right}
+}
+
+@media (max-width: 991px) {
+  .logo{height: 40px; margin:13px 0 0px}
+  .nav-toggler{display: block}
+  nav{position: absolute;width: 100%;height: calc(100vh);margin-top: -70px;background: #002855;top: 70px;left: -100vw;transition: 0.5s}
+  nav.active{left: 0}
+  nav ul{display: block;text-align: center;margin-top: 70px}
+  nav ul li{border-bottom: 1px solid rgba(242, 244, 248, 0.2)}
+  .submenu.active ul{display: block;margin-top: 0px;padding: 5px 0}
+  .submenu.active ul li{width: 100%}
+  nav ul li:hover ul{display: none}
+  nav ul li.active ul{position: relative}
+  nav ul li.submenu > a::after{position: absolute;right: 0.8rem;font-family: "font";content: "\f107";color: #fff;padding-left: 0.3rem;-webkit-transition-duration: 500ms;transition-duration: 500ms;}
+  nav ul li.submenu.active > a::after{transform: rotate(-180deg)}
+}

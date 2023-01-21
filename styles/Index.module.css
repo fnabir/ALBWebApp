@@ -1,0 +1,22 @@
+.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(img/bn_index.webp)}
+.cardProduct{padding:1rem;overflow:hidden}
+.cardProduct .thumb{border-radius:.8rem .8rem 0 0;overflow:hidden}
+.cardProduct .thumb img{width:100%;height:auto;transform:scale(1);transition:.3s}
+.productName{background:#023e7d;padding:2rem 0;transition:.3s;border-bottom-right-radius:.8rem;border-bottom-left-radius:.8rem;overflow:hidden;margin-bottom:.4rem;font-size:1.4rem}
+.cardProduct:hover .thumb img{transform:scale(1.2);transition:all 1s ease-in-out}
+.productName:hover,.cardProduct:hover .productName{background:#002855;color:#fff;text-decoration:underline}
+.partner img{height:50px;width:auto}
+.counter{font:600 3rem 'Oxygen'}
+.counter p{font-size: 1.5rem;margin-bottom:1rem}
+.counter svg{display:block;margin:2rem auto;width:auto;height:200px}
+
+#cog1,#cog2{animation: cog 2s linear infinite;transform-origin: center;transform-box: fill-box}
+#cog3{animation: cogb 4s linear infinite;transform-origin: center;transform-box: fill-box}
+#wrench{animation: wrench 2s linear infinite alternate;transform-origin: 20% 25%}
+#nut{animation: nut 4s linear infinite;transform-origin: center;transform-box: fill-box}
+#lift{animation: lift 4s linear infinite alternate;transform-origin: center;transform-box: fill-box}
+@keyframes wrench{from{transform: rotateZ(60deg);}to{transform:rotateZ(0deg)}}
+@keyframes nut{0%{transform: rotateZ(0deg);}50%{transform:rotateZ(0deg)}100%{transform:rotateZ(60deg)}}
+@keyframes lift{0%{transform: translateY(0)}20%{transform: translateY(0)}80%{transform:translateY(-580px)}100%{transform:translateY(-580px)}}
+@keyframes cog{from{transform: rotateZ(0deg)}to{transform:rotateZ(360deg)}}
+@keyframes cogb{from{transform: rotateZ(360deg)}to{transform:rotateZ(0deg)}}

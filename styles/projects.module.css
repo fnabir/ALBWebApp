@@ -1,0 +1,8 @@
+.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: bottom;background-size: cover;background-image: url(img/bn_project-m.webp)}
+.name{font:700 1.2rem 'Oxygen';color: #1583e9}
+.place{font-size:1rem;margin-bottom: 0.8rem}
+.product li::before {font-family: "Oxygen";content: ">> ";color: #1583e9}
+
+@media (min-width: 992px){
+  .banner {background-image:url(img/bn_project.webp)}
+}

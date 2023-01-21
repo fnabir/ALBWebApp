@@ -1,0 +1,5 @@
+.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: bottom;background-size: cover;background-image: url(img/bn_hospitalLift_m.webp)}
+
+@media (min-width: 992px){
+  .banner {background-image:url(img/bn_hospitalLift.webp)}
+}

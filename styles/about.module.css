@@ -1,0 +1,12 @@
+.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(img/bn_about-m.webp)}
+.about img,.choose svg {width: 75%;height: auto}
+.choose li {margin: 0.7rem auto}
+.choose li::before {font-family: "icon";content: "\e800";padding-right: 0.2rem;color: #28a745}
+.name {color: #000;font: 700 1rem/1.5 "Oxygen"}
+.title {font: 300 0.9rem/1.5 sans-serif}
+.team img{border: #00000000 solid;width: 90%;border-radius: 50%;transition: all 0.3s}
+@media (min-width: 992px){
+  .banner {background-image:url(img/bn_about.webp)}
+  .name{margin: 0.8rem auto 0.4rem;font-size: 1.1rem}
+  .title{font-size: 1rem}
+}

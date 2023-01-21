@@ -1,0 +1,15 @@
+.product{width:33.33%;padding:1%;overflow: hidden}
+.productWide{width:100%;}
+.product span{display:block!important}
+.product img{width:100%;border-top-left-radius:8px;border-top-right-radius:8px}
+.product p{background:linear-gradient(to bottom,#023e7d,#013369);margin:0;color:#fff;padding:2px 0 5px;border-top:solid 4px #023e7d;transition-duration:.3s;font-size:0.85rem}
+.product:hover p{border-top:solid 4px #2699fb}
+.i2 a{background:linear-gradient(to bottom,#013369,#002855);display:block;text-align: center;padding:5px 0;font-size:16px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;font-size:0.85rem}
+.i2 a::after{font-family: "icon";content: " \f101";}
+.i1 p{background:linear-gradient(to bottom,#023e7d,#002855);border-bottom-left-radius:8px;border-bottom-right-radius:8px;font-size:0.85rem}
+
+@media (min-width: 992px){
+  .product{width:16.66%}
+  .productWide{width:25%;}
+  .product p, .i2 a, .i2 p{font-size: 1rem}
+}
