@@ -1,38 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is [Asian Lift Bangladesh](https://asianliftbd.com/) webapp project created with [Next.js](https://nextjs.org/) and TypeScript.
 
-## Getting Started
+### Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
+Run the development server: `npm run dev`
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### File Structure
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `/pages`      : contains all the pages
+- `/components` : contains reusable components in different pages
+- `/styles`     : contains all CSS, fonts and background images served with css only 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Deploy Info
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project is deployed with NodeJs App of cPanel and hosted on cPanel.
+Next.js app requires [server.js](https://nextjs.org/docs/advanced-features/custom-server) to use custom server like cPanel.
+[Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Learn More
+### Changelog
 
-To learn more about Next.js, take a look at the following resources:
+#### 3.0.0
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##### ## Changed
+- Updated framework with NextJs 13 and TypeScript
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+##### ## Known Issues
+- Nav Expand icon not working for mobile screen
+- Higher load time for mobile apps
