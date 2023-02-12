@@ -4,6 +4,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   const rootDirectory = useRouter().basePath
+  const currentYear = new Date().getFullYear()
+  
   return(
     <>
       <footer className="bg">
@@ -51,7 +53,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-6">
-              Copyright © 2010-2023 Asian Lift Bangladesh<br/>All Rights Reserved
+              Copyright © 2010-{currentYear} Asian Lift Bangladesh<br/>All Rights Reserved
             </div>
             <div className="col-md-12 col-lg-6 links">
               <ul>
