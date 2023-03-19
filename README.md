@@ -19,6 +19,19 @@ Next.js app requires [server.js](https://nextjs.org/docs/advanced-features/custo
 
 ### Changelog
 
+#### 3.0.1
+
+##### ## Dependency
+
+@next/font            13.1.2  →   13.2.4
+@types/node         18.11.18  →  18.15.3
+@types/react         18.0.26  →  18.0.28
+@types/react-dom     18.0.10  →  18.0.11
+eslint                8.32.0  →   8.36.0
+eslint-config-next    13.1.2  →   13.2.4
+next                  13.1.2  →   13.2.4
+typescript             4.9.4  →    5.0.2
+
 #### 3.0.0
 
 ##### ## Changed
