@@ -1,6 +1,6 @@
 *,::after,::before{box-sizing:border-box}
 
-html,body {padding: 0;margin: 0;font: 400 0.95rem/1.5 'Roboto', 'Oxygen', sans-serif;color: #fff;user-select: none;scroll-behavior: smooth;background-color: #fff;overflow-x: hidden;text-align: center}
+html,body {padding: 0;margin: 0;font: 400 0.95rem/1.5 'Oxygen', sans-serif;color: #fff;user-select: none;scroll-behavior: smooth;background-color: #fff;overflow-x: hidden;text-align: center}
 
 h1,h2,h3,h4,h5,h6 {margin-top:0;margin-bottom:.5rem}
 p{margin: 0.5rem auto}
@@ -32,8 +32,7 @@ header{position:fixed;top:0;left:0;padding: 0 3%;width:100%;box-sizing:border-bo
 nav{float:right;z-index:-1}
 nav ul{display:flex;margin:0;padding:0}
 nav ul li, nav ul li a{display: block;color:#d4e6f6;font-size:1.15rem;text-align: center;margin:15px 8px;position: relative;}
-nav ul li.submenu{margin:30px 8px 20px}
-nav ul li a::after{clear: both;display: block;content: "";position: relative;width:0;left: 50%;height: 3px;background: #fff;border-radius: 6px;transition: all 0.5s;}
+nav ul li.submenu{margin:30px 8px 20px;transition: 0.5s}
 nav ul li a:focus,nav ul li a:hover{color: #fff}
 nav ul li a:hover::after{width:100%;left:0}
 nav ul li ul{position: absolute;left: 0;display:block;background: #00224a;border-radius: 0.5rem;visibility: hidden;opacity:0;transition: visibility 0s, opacity 0.3s linear}
@@ -43,7 +42,7 @@ nav ul li ul li:last-child {border-bottom: none}
 
 nav ul li ul li a {font-size: 1.1rem;text-align: left;line-height: 1.5rem;color:#d4e6f6}
 nav ul li a:focus,nav ul li a:hover {color:#fff}
-nav ul li.submenu::after{font-family: "icon";content: "\f107";padding-left: 0.3rem;-webkit-transition-duration: 500ms;transition-duration: 500ms}
+nav ul li.submenu::after{font-family: "icon";content: "\f107";padding-left: 0.3rem;transition: 0.5s}
 .nav-toggler {border: none;background-color: transparent;cursor: pointer;display: none;float: right;margin: 18px 0}
 .nav-toggler .toggle-icon {display: inline-block;cursor: pointer}
 .nav-toggler .toggle-icon span {position: relative;background-color: #fff;border-radius: 3px;display: block;height: 3px;margin-top: 5px;padding: 0;-webkit-transition-duration: 300ms;transition-duration: 300ms;width: 30px;cursor: pointer}
@@ -238,10 +237,11 @@ footer ul li a {color: #d4e6f6;font-size: 1.1rem;line-height: 2.5rem;transition:
   nav.active{left: 0}
   nav ul{display: block;text-align: center;margin-top: 70px}
   nav ul li{border-bottom: 1px solid rgba(242, 244, 248, 0.2)}
-  .submenu.active ul{display: block;margin-top: 0px;padding: 5px 0}
+  .submenu.active ul{display: block;margin: 15px 8px;padding: 5px 15px 5px 0px;transition: 0.5s}
   .submenu.active ul li{width: 100%}
   nav ul li:hover ul{display: none}
   nav ul li.active ul{position: relative}
-  nav ul li.submenu > a::after{position: absolute;right: 0.8rem;font-family: "font";content: "\f107";color: #fff;padding-left: 0.3rem;-webkit-transition-duration: 500ms;transition-duration: 500ms;}
-  nav ul li.submenu.active > a::after{transform: rotate(-180deg)}
+  nav ul li.submenu{margin: 15px; padding: 0 0 20px;transition: 0.5s}
+  nav ul li.submenu::after{position: absolute;padding-left: 0.3rem;transition: 500ms;}
+  nav ul li.submenu.active::after{transform: rotate(180deg)}
 }
