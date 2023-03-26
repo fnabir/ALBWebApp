@@ -38,27 +38,25 @@ const Generator: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
-          <h2 className='heading black'><span>Generators</span></h2>
-          <div className="row justify-content-center">
+        <h2 className='heading black'><span>Generators</span></h2>
+        <div className="row justify-content-center">
 
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <Card path='C15'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <Card path='C38'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <Card path='C150'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <Card path='C550'/>
-            </div>
-
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <Card path='C15'/>
           </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <Card path='C38'/>
+          </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <Card path='C150'/>
+          </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <Card path='C550'/>
+          </div>
+
         </div>
       </section>
 

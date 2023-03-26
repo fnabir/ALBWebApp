@@ -42,11 +42,11 @@ const LiftAccessories: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
           <h2 className='heading black'><span>Design</span></h2>
 
-          <h3 className='black text-left'>Cabin Wall</h3>
-          <hr className='align-left w-100'/>
+          <hr className='w-100'/>
+          <h3 className='black'>Cabin Wall</h3>
+          <hr className='w-100'/>
           
           <div className="row justify-content-center">
 
@@ -84,8 +84,9 @@ const LiftAccessories: NextPage = () => {
 
           </div>
           
-          <h3 className='mt-2 black text-left'>Celling</h3>
-          <hr className='align-left w-100'/>
+          <hr className='mt-2 w-100'/>
+          <h3 className='black'>Celling</h3>
+          <hr className='w-100'/>
           
           <div className="row justify-content-center">
 
@@ -179,9 +180,9 @@ const LiftAccessories: NextPage = () => {
 
           </div>
 
-
-          <h3 className='mt-2 black text-left'>Door</h3>
-          <hr className='align-left w-100'/>
+          <hr className='mt-2 w-100'/>
+          <h3 className='black'>Door</h3>
+          <hr className='w-100'/>
           
           <div className="row justify-content-center">
 
@@ -211,8 +212,9 @@ const LiftAccessories: NextPage = () => {
 
           </div>
 
-          <h3 className='mt-2 black text-left'>Hand Rail</h3>
-          <hr className='align-left w-100'/>
+          <hr className='mt-2 w-100'/>
+          <h3 className='black'>Hand Rail</h3>
+          <hr className='w-100'/>
           
           <div className="row justify-content-center">
 
@@ -242,8 +244,9 @@ const LiftAccessories: NextPage = () => {
 
           </div>
 
-          <h3 className='mt-2 black text-left'>Floor</h3>
-          <hr className='align-left w-100'/>
+          <hr className='mt-2 w-100'/>
+          <h3 className='black'>Floor</h3>
+          <hr className='w-100'/>
           
           <div className="row justify-content-center">
 
@@ -297,11 +300,8 @@ const LiftAccessories: NextPage = () => {
 
           </div>
 
-        </div>
       </section>
 
-      
-      
     </>
   )
 }

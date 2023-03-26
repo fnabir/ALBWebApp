@@ -45,15 +45,11 @@ const Dumbwaiter: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
-          <h2 className='heading black'><span>Dumbwaiter</span> Design</h2>
-          <div className="row justify-content-center">
-            <Image src='/img/products/dumbwaiter.webp' alt='Dumbwaiter Design' width={800} height={400} />
-          </div>
+        <h2 className='heading black'><span>Dumbwaiter</span> Design</h2>
+        <div className="row justify-content-center">
+          <Image src='/img/products/dumbwaiter.webp' alt='Dumbwaiter Design' width={1920} height={400} />
         </div>
       </section>
-
-      
       
     </>
   )

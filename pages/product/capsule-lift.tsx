@@ -50,40 +50,37 @@ const CapsuleLift: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
-          <h2 className='heading black'><span>Lift</span> Design</h2>
-          <div className="row justify-content-center">
+        <h2 className='heading black'><span>Lift</span> Design</h2>
+        <div className="row justify-content-center">
+
+        <div className={global.product+" "+global.i2}>
+            <Card path='MD-G001'/>
+            <a href="http://www.mdkselevator.com/view.php?id=216" target="_blank" rel="noreferrer">Details</a>
+          </div>
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-G002'/>
+            <a href="http://www.mdkselevator.com/view.php?id=217" target="_blank" rel="noreferrer">Details</a>
+          </div>
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-G009'/>
+            <a href="http://www.mdkselevator.com/view.php?id=218" target="_blank" rel="noreferrer">Details</a>
+          </div>
 
           <div className={global.product+" "+global.i2}>
-              <Card path='MD-G001'/>
-              <a href="http://www.mdkselevator.com/view.php?id=216" target="_blank" rel="noreferrer">Details</a>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-G002'/>
-              <a href="http://www.mdkselevator.com/view.php?id=217" target="_blank" rel="noreferrer">Details</a>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-G009'/>
-              <a href="http://www.mdkselevator.com/view.php?id=218" target="_blank" rel="noreferrer">Details</a>
-            </div>
+            <Card path='MD-G010'/>
+            <a href="http://www.mdkselevator.com/view.php?id=219" target="_blank" rel="noreferrer">Details</a>
+          </div>
 
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-G010'/>
-              <a href="http://www.mdkselevator.com/view.php?id=219" target="_blank" rel="noreferrer">Details</a>
-            </div>
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-G011'/>
+            <a href="http://www.mdkselevator.com/view.php?id=220" target="_blank" rel="noreferrer">Details</a>
+          </div>
 
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-G011'/>
-              <a href="http://www.mdkselevator.com/view.php?id=220" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-G012'/>
-              <a href="http://www.mdkselevator.com/view.php?id=221" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-G012'/>
+            <a href="http://www.mdkselevator.com/view.php?id=221" target="_blank" rel="noreferrer">Details</a>
           </div>
         </div>
       </section>

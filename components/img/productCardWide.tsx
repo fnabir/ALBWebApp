@@ -8,7 +8,7 @@ const imageContainer = (props: imgProps) => {
   return(
     <>
       <Image src={`/img/products/${props.path}.webp`} alt="" width={450} height={300} style={{marginTop: '1rem'}}/>
-      <p>{props.path}</p>
+      <p style={{fontSize: '1.2rem'}}>{props.path}</p>
     </>
   )
 }

@@ -55,123 +55,121 @@ const PassengerLift: NextPage = () => {
       </section>
 
       <section className='bgw1'>
-        <div className="container">
-          <h2 className='heading black'><span>Lift</span> Design</h2>
-          <div className="row justify-content-center">
+        <h2 className='heading black'><span>Lift</span> Design</h2>
+        <div className="row justify-content-center">
 
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-011'/>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='RJ-013'/>
-              <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ013/" target="_blank" rel="noreferrer">360 Degree</a>
-            </div>
-
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-016'/>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='RJ-018'/>
-              <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ018/" target="_blank" rel="noreferrer">360 Degree</a>
-            </div>
-
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-019'/>
-            </div>
-
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-020'/>
-            </div>
-            
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-027'/>
-            </div>
-
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-028'/>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='RJ-031'/>
-              <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ031/" target="_blank" rel="noreferrer">360 Degree</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='RJ-034'/>
-              <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ034/" target="_blank" rel="noreferrer">360 Degree</a>
-            </div>
-
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-036'/>
-            </div>
-
-            <div className={global.product+" "+global.i1}>
-              <Card path='RJ-037'/>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J001'/>
-              <a href="http://www.mdkselevator.com/view.php?id=205" target="_blank" rel="noreferrer">Details</a>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J002'/>
-              <a href="http://www.mdkselevator.com/view.php?id=223" target="_blank" rel="noreferrer">Details</a>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J003'/>
-              <a href="http://www.mdkselevator.com/view.php?id=222" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J004'/>
-              <a href="http://www.mdkselevator.com/view.php?id=215" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J005'/>
-              <a href="http://www.mdkselevator.com/view.php?id=204" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J006'/>
-              <a href="http://www.mdkselevator.com/view.php?id=203" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J007'/>
-              <a href="http://www.mdkselevator.com/view.php?id=202" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J008'/>
-              <a href="http://www.mdkselevator.com/view.php?id=201" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-J009'/>
-              <a href="http://www.mdkselevator.com/view.php?id=200" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-B001'/>
-              <a href="http://www.mdkselevator.com/view.php?id=227" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-B002'/>
-              <a href="http://www.mdkselevator.com/view.php?id=226" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-B003'/>
-              <a href="http://www.mdkselevator.com/view.php?id=225" target="_blank" rel="noreferrer">Details</a>
-            </div>
-          
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-011'/>
           </div>
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='RJ-013'/>
+            <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ013/" target="_blank" rel="noreferrer">360 Degree</a>
+          </div>
+
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-016'/>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='RJ-018'/>
+            <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ018/" target="_blank" rel="noreferrer">360 Degree</a>
+          </div>
+
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-019'/>
+          </div>
+
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-020'/>
+          </div>
+          
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-027'/>
+          </div>
+
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-028'/>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='RJ-031'/>
+            <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ031/" target="_blank" rel="noreferrer">360 Degree</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='RJ-034'/>
+            <a href="http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ034/" target="_blank" rel="noreferrer">360 Degree</a>
+          </div>
+
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-036'/>
+          </div>
+
+          <div className={global.product+" "+global.i1}>
+            <Card path='RJ-037'/>
+          </div>
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J001'/>
+            <a href="http://www.mdkselevator.com/view.php?id=205" target="_blank" rel="noreferrer">Details</a>
+          </div>
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J002'/>
+            <a href="http://www.mdkselevator.com/view.php?id=223" target="_blank" rel="noreferrer">Details</a>
+          </div>
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J003'/>
+            <a href="http://www.mdkselevator.com/view.php?id=222" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J004'/>
+            <a href="http://www.mdkselevator.com/view.php?id=215" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J005'/>
+            <a href="http://www.mdkselevator.com/view.php?id=204" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J006'/>
+            <a href="http://www.mdkselevator.com/view.php?id=203" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J007'/>
+            <a href="http://www.mdkselevator.com/view.php?id=202" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J008'/>
+            <a href="http://www.mdkselevator.com/view.php?id=201" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-J009'/>
+            <a href="http://www.mdkselevator.com/view.php?id=200" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-B001'/>
+            <a href="http://www.mdkselevator.com/view.php?id=227" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-B002'/>
+            <a href="http://www.mdkselevator.com/view.php?id=226" target="_blank" rel="noreferrer">Details</a>
+          </div>
+
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-B003'/>
+            <a href="http://www.mdkselevator.com/view.php?id=225" target="_blank" rel="noreferrer">Details</a>
+          </div>
+        
         </div>
       </section>
 

@@ -53,19 +53,17 @@ const MovingWalk: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
-          <h2 className='heading black'><span>Moving Walk</span> Design</h2>
-          <div className="row justify-content-center">
+        <h2 className='heading black'><span>Moving Walk</span> Design</h2>
+        <div className="row justify-content-center">
 
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <CardWide path='ALB-901'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <CardWide path='ALB-902'/>
-            </div>
-
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <CardWide path='ALB-901'/>
           </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <CardWide path='ALB-902'/>
+          </div>
+
         </div>
       </section>
       

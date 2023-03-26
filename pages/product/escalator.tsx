@@ -49,23 +49,21 @@ const Escalator: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
-          <h2 className='heading black'><span>Escalator</span> Design</h2>
-          <div className="row justify-content-center">
+        <h2 className='heading black'><span>Escalator</span> Design</h2>
+        <div className="row justify-content-center">
 
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <CardWide path='RES-001'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <CardWide path='RES-002'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <CardWide path='RES-003'/>
-            </div>
-
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <CardWide path='RES-001'/>
           </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <CardWide path='RES-002'/>
+          </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <CardWide path='RES-003'/>
+          </div>
+
         </div>
       </section>
 

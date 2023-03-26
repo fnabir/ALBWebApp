@@ -44,41 +44,39 @@ const HospitalLift: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
-          <h2 className='heading black'><span>Lift</span> Design</h2>
-          
-          <div className="row justify-content-center">
+        <h2 className='heading black'><span>Lift</span> Design</h2>
+        
+        <div className="row justify-content-center">
 
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-B001'/>
-              <a href="http://www.mdkselevator.com/view.php?id=227" target="_blank" rel="noreferrer">Details</a>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-B002'/>
-              <a href="http://www.mdkselevator.com/view.php?id=226" target="_blank" rel="noreferrer">Details</a>
-            </div>
-            
-            <div className={global.product+" "+global.i2}>
-              <Card path='MD-B003'/>
-              <a href="http://www.mdkselevator.com/view.php?id=225" target="_blank" rel="noreferrer">Details</a>
-            </div>
-
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-B001'/>
+            <a href="http://www.mdkselevator.com/view.php?id=227" target="_blank" rel="noreferrer">Details</a>
           </div>
-
-          <div className="row justify-content-center">
-            
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <CardWide path='RJ-017'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <CardWide path='RJ-021'/>
-            </div>
-
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-B002'/>
+            <a href="http://www.mdkselevator.com/view.php?id=226" target="_blank" rel="noreferrer">Details</a>
+          </div>
+          
+          <div className={global.product+" "+global.i2}>
+            <Card path='MD-B003'/>
+            <a href="http://www.mdkselevator.com/view.php?id=225" target="_blank" rel="noreferrer">Details</a>
           </div>
 
         </div>
+
+        <div className="row justify-content-center">
+          
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <CardWide path='RJ-017'/>
+          </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <CardWide path='RJ-021'/>
+          </div>
+
+        </div>
+
       </section>
       
     </>

@@ -1,4 +1,4 @@
-.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: bottom;background-size: cover;background-image: url(img/bn_capsuleLift_m.webp)}
+.banner{background-position: bottom;background-image: url(img/bn_capsuleLift_m.webp)}
 
 @media (min-width: 992px){
   .banner {background-image:url(img/bn_capsuleLift.webp)}
