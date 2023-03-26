@@ -1,4 +1,4 @@
-.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: bottom;background-size: cover;background-image: url(img/bn_contact-m.webp)}
+.banner{width: 100%;position: relative;margin: 0;background-color: #001845;background-attachment: fixed;background-repeat: no-repeat;background-position: bottom;background-size: cover;background-image: url(img/bn_contact-m.webp)}
 .logo{width: 80%; height: fit-content;}
 .maps{height:300px}
 .btnSocial{display:inline-block;width:4rem;height:4rem;background:#eee;margin:0.5rem;border-radius:30%;box-shadow:0 5px 1rem 3px #01010144;color:#1583e9;overflow:hidden;position:relative}
