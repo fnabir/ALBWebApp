@@ -77,16 +77,16 @@ const Contact: NextPage = () => {
                 <h2>Contact Form</h2>
                 <form action="https://formsubmit.co/922dbab3b23b04485d971c05d8df9292" method="POST">
                   <label>Name*</label>
-                  <input id='name' required autoComplete='name'/>
+                  <input name='Name' type='text' required autoComplete='name'/>
                   <label>Phone No</label>
-                  <input id='phone' typeof='tel' autoComplete="phone" minLength={11}/>
+                  <input name='Phone' type='tel' autoComplete="phone" minLength={11}/>
                   <label>Email Address*</label>
-                  <input id="email" typeof='email' required autoComplete="email"/>
+                  <input name="Email" type='email' required autoComplete="email"/>
                   <label>Subject*</label>
-                  <input id="subject" required/>
+                  <input name="Subject" required/>
                   <label>Message*</label>
-                  <textarea id="message" typeof='text' autoComplete="off" minLength={10} maxLength={500} required></textarea>
-                  <button className='btn btnPrimary w-100'>Submit</button>
+                  <textarea name="Message" typeof='text' autoComplete="off" minLength={10} maxLength={500} required></textarea>
+                  <button type='submit' className='btn btnPrimary w-100'>Submit</button>
                   <small>By submitting you agree with our <Link href='/terms-of-use'>Terms of Use</Link> and <Link href='/privacy-policy'>Privacy Policy</Link>.</small>
                 </form>
               </div>
