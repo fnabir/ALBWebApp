@@ -42,23 +42,19 @@ const CargoLift: NextPage = () => {
       </section>
 
       <section>
-        <div className="container">
-          <h2 className='heading black'><span>Lift</span> Design</h2>
-          <div className="row justify-content-center">
+        <h2 className='heading black'><span>Lift</span> Design</h2>
+        <div className="row justify-content-center">
 
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <Card path='RJ-001'/>
-            </div>
-
-            <div className={global.product+" "+global.productWide+" "+global.i1}>
-              <Card path='RJ-002'/>
-            </div>
-
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <Card path='RJ-001'/>
           </div>
+
+          <div className={global.product+" "+global.productWide+" "+global.i1}>
+            <Card path='RJ-002'/>
+          </div>
+
         </div>
       </section>
-
-      
       
     </>
   )

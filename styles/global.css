@@ -55,7 +55,7 @@ nav ul li.submenu::after{font-family: "icon";content: "\f107";padding-left: 0.3r
 .banner-area h1{color: #fff;font-size: 3rem;line-height: 3.2rem; margin-bottom:1rem}
 .banner-area p{color: #ccc;font-size: 1.3rem}
 
-.breadcrumb {display: flex;flex-wrap: wrap;padding: 0.75rem 1rem;list-style: none;justify-content: center}
+.breadcrumb {font-size:1.3rem; display: flex;flex-wrap: wrap;padding: 0.75rem 1rem;list-style: none;justify-content: center}
 .breadcrumb-item::before {padding-right: 0.3rem;font-family: "icon";content: "\e80b";color: #fff}
 .breadcrumb-item + .breadcrumb-item {padding-left: 0.3rem;}
 .breadcrumb-item + .breadcrumb-item::before {padding-right: 0.3rem;color: #999;font-family: "icon";content: "\f105";transform: translateY(1px);}
