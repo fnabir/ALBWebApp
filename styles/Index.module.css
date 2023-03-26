@@ -1,4 +1,4 @@
-.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(img/bn_index.webp)}
+.banner{width: 100%;position: relative;margin: 0;background-color: #001845;background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(img/bn_index.webp)}
 .cardProduct{padding:1rem;overflow:hidden}
 .cardProduct .thumb{border-radius:.8rem .8rem 0 0;overflow:hidden}
 .cardProduct .thumb img{width:100%;height:auto;transform:scale(1);transition:.3s}

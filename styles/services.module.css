@@ -1,4 +1,4 @@
-.banner{width: 100%;position: relative;margin: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(img/bn_service-m.webp)}
+.banner{width: 100%;position: relative;margin: 0;background-color: #001845;background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(img/bn_service-m.webp)}
 .about img,.choose svg {width: 75%;height: auto}
 .choose li {margin: 0.7rem auto}
 .choose li::before {font-family: "icon";content: "\e800";padding-right: 0.2rem;color: #28a745}
