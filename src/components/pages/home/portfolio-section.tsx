@@ -57,7 +57,7 @@ function MorphismCard({
       className="w-52 max-w-1/2 rounded-2xl backdrop-blur-lg bg-accent dark:bg-white shadow-md dark:shadow-white p-4 text-center flex flex-col justify-center items-center transition-all hover:scale-105 hover:shadow-xl duration-300"
     >
       <Icon className="size-12 text-blue-500 mb-6" />
-      <div className="text-4xl font-bold text-black">
+      <div className="text-4xl font-bold text-black translate-x-3">
         <AnimatedCounter to={count} />
       </div>
       <div className="lg:text-2xl font-medium text-muted-foreground">{label}</div>
