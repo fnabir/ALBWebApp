@@ -83,14 +83,14 @@ export default function Footer() {
     <footer className="flex justify-center border-t py-12 md:py-16">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <LogoWithText className="w-2/3"/>
+          <div className="space-y-4 text-center lg:text-left">
+            <LogoWithText className="w-2/3 mx-auto lg:mx-0"/>
             <p className="text-sm lg:text-base text-muted-foreground">
               Your trusted partner for premium elevator and lift solutions, ensuring safety, reliability, and expert service across Bangladesh.
             </p>
           </div>
           {links.map((section) => (
-            <div key={section.label} className="lg:mx-auto lg:text-center space-y-4">
+            <div key={section.label} className="mx-auto text-center space-y-4">
               <h3 className="lg:text-lg font-semibold mb-2">{section.label}</h3>
               <nav aria-label="Links">
                 <ul className="space-y-2 text-sm lg:text-base">
@@ -106,7 +106,7 @@ export default function Footer() {
             </div>
           ))}
           <div className="space-y-4">
-            <h3 className="lg:text-lg font-semibold mb-2">Contact Us</h3>
+            <h3 className="lg:text-lg font-semibold mb-2 text-center lg:text-left">Contact Us</h3>
             <div className="space-y-2 text-sm lg:text-base">
                 <a href="https://maps.app.goo.gl/hgSperUkHNgRsFdh8" className="text-muted-foreground hover:text-foreground flex items-center space-x-4" target="_blank">
                   <FaMapMarkerAlt className="w-5 h-5"/>
