@@ -73,9 +73,9 @@ export default function PartnerSection() {
               <Image
                 src={partner.src}
                 alt={partner.alt}
-                height={60}
-                width={120}
-                className="object-contain h-[60px] w-auto"
+                fill
+                sizes="(max-width: 768px) 50vw, 20vw"
+                className="object-contain"
               />
             </div>
             <div className="text-sm font-medium text-gray-700">{partner.name}</div>

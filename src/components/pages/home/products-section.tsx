@@ -65,6 +65,7 @@ export default function ProductsSection() {
                 src={product.image}
                 alt={product.label}
                 fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:blur-sm group-hover:scale-105"
               />
 
