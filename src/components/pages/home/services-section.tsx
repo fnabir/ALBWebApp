@@ -42,15 +42,7 @@ export default function ServicesSection() {
   )
 }
 
-function ServicesCard({
-  label,
-  targetId,
-  Icon,
-}: {
-  label: string;
-  targetId: string;
-  Icon: IconType;
-}) {
+function ServicesCard({label, targetId,Icon,}: {label: string;targetId: string;Icon: IconType;}) {
   const router = useRouter();
 
   const handleClick = () => {
@@ -61,7 +53,7 @@ function ServicesCard({
   return (
     <div
       onClick={handleClick}
-      className="rounded-2xl p-6 text-center border bg-background shadow-md hover:shadow-lg shadow-black/50 flex flex-col items-center transition-all hover:scale-105 duration-300 cursor-pointer"
+      className="rounded-2xl p-6 text-center border bg-background shadow-md hover:shadow-xl dark:shadow-black/50 flex flex-col items-center transition-all duration-300 cursor-pointer"
     >
       <Icon className="text-4xl mb-4 lg:mb-6 lg:size-14" />
       <div className="text-lg lg:text-2xl font-medium">{label}</div>

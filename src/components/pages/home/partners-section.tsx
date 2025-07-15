@@ -50,15 +50,13 @@ export default function PartnerSection() {
   return (
     <PageSection 
       id="partners"
-      className="bg-muted/50 dark:bg-foreground text-black"
+      className="bg-muted/50"
       badge="Business Partner"
-      badgeClass="bg-black! text-white"
       heading="Our Valued Partners"
       subheading="We&apos;re proud to collaborate with industry-leading companies and
             organizations. These strong partnerships enable us to deliver
             superior elevator and lift solutions with unmatched quality and
             reliability."
-      subheadingClass="dark:text-muted"
     >
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center">
         {partners.map((partner, index) => (
