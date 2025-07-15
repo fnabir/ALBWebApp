@@ -5,6 +5,7 @@ import { animate, motion, useMotionValue } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { useEffect, useState } from "react"
 import { PageSection } from "@/components/page-section"
+import { IconType } from "react-icons";
 
 const portfolio = [
   {
@@ -48,7 +49,7 @@ function MorphismCard({
   count,
   label
 }: {
-  icon: React.ElementType;
+  icon: IconType;
   count: number;
   label: string;
 }) {
