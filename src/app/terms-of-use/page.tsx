@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
 import { BreadcrumbInterface } from "@/lib/interfaces";
+import Link from "next/link";
 
 export const metadata = {
   title: "Terms of Use | Asian Lift Bangladesh",
@@ -82,7 +83,7 @@ export default function TermsOfUse() {
           <p>If you have any questions about these Terms:</p>
           <ul className="list-none space-y-1">
             <li>Email: <a href="mailto:contact@asianliftbd.com" className="text-blue-400 hover:underline">contact@asianliftbd.com</a></li>
-            <li>Visit: <a href="https://asianliftbd.com/contact" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">asianliftbd.com/contact</a></li>
+            <li>Visit: <Link href="/contact" className="text-blue-400 hover:underline">asianliftbd.com/contact</Link></li>
           </ul>
         </div>
       </section>

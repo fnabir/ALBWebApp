@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
 import { BreadcrumbInterface } from "@/lib/interfaces";
+import Link from "next/link";
 
 export const metadata = {
   title: "Privacy Policy | Asian Lift Bangladesh",
@@ -37,7 +38,7 @@ export default function PrivacyPolicy() {
 
           <p>This Privacy Policy describes our policies on the collection, use, and disclosure of your information when you use the service. It also tells you about your privacy rights and how the law protects you.</p>
 
-          <p>Your privacy is important to Asian Lift Bangladesh. We’ve developed this Privacy Policy to describe how we collect, use, disclose, transfer, and store your personal information.</p>
+          <p>Your privacy is important to Asian Lift Bangladesh. We&apos;ve developed this Privacy Policy to describe how we collect, use, disclose, transfer, and store your personal information.</p>
 
           <h2 className="text-2xl font-semibold mt-8">Interpretation and Definitions</h2>
           <p><strong>Interpretation:</strong> The words where the initial letter is capitalized have meanings defined under the following conditions.</p>
@@ -104,7 +105,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-semibold mt-8">Security of Your Personal Data</h2>
           <p>We use industry-standard practices to secure your personal data. However, no transmission over the internet is 100% secure.</p>
 
-          <h2 className="text-2xl font-semibold mt-8">Children’s Privacy</h2>
+          <h2 className="text-2xl font-semibold mt-8">Children&apos;s Privacy</h2>
           <p>We do not knowingly collect personal data from anyone under the age of 18.</p>
 
           <h2 className="text-2xl font-semibold mt-8">Third-Party Sites</h2>
@@ -117,7 +118,7 @@ export default function PrivacyPolicy() {
           <p>If you have questions about this Privacy Policy:</p>
           <ul className="list-none space-y-1">
             <li>Email: <a href="mailto:contact@asianliftbd.com" className="text-blue-400 hover:underline">contact@asianliftbd.com</a></li>
-            <li>Visit: <a href="https://asianliftbd.com/contact" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">asianliftbd.com/contact</a></li>
+            <li>Visit: <Link href="/contact" className="text-blue-400 hover:underline">asianliftbd.com/contact</Link></li>
           </ul>
         </div>
       </section>
