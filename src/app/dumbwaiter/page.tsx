@@ -13,20 +13,24 @@ export const metadata = {
   },
 };
 
-export default function Dumbwaiter() {
-  const breadcrumb: BreadcrumbInterface[] = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "Dumbwaiter"
-    }
-  ]
+const breadcrumb: BreadcrumbInterface[] = [
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "Dumbwaiter"
+  }
+]
 
+export default function Dumbwaiter() {
   return (
     <PageLayout>
-      <HeroSection img="hero_dumbwaiter" heading="Dumbwaiter" breadcrumb={breadcrumb}/>
+      <HeroSection 
+        className="h-[calc(75vh-64px)] bg-[url(/img/hero_dumbwaiter_m.webp)] md:bg-[url(/img/hero_dumbwaiter.webp)]" 
+        heading="Dumbwaiter" 
+        breadcrumb={breadcrumb}
+      />
     </PageLayout>
   );
 }

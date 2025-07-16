@@ -26,7 +26,11 @@ export default function Services() {
 
   return (
     <PageLayout>
-      <HeroSection img="hero_services" heading="Our Services" breadcrumb={breadcrumb}/>
+      <HeroSection 
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_services_m.webp)] md:bg-[url(/img/hero_services.webp)]" 
+        heading="Our Services" 
+        breadcrumb={breadcrumb}
+      />
     </PageLayout>
   );
 }

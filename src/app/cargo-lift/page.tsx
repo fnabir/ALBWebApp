@@ -13,21 +13,21 @@ export const metadata = {
   },
 };
 
-export default function CargoLift() {
-  const breadcrumb: BreadcrumbInterface[] = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "Cargo Lift"
-    }
-  ]
+const breadcrumb: BreadcrumbInterface[] = [
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "Cargo Lift"
+  }
+]
 
+export default function CargoLift() {
   return (
     <PageLayout>
       <HeroSection 
-        className="min-h-[calc(60vh-64px)] bg-[url(/img/hero_cargo_lift_m.webp)] md:bg-[url(/img/hero_cargo_lift.webp)]" 
+        className="h-[calc(75vh-64px)] bg-[url(/img/hero_cargo_m.webp)] md:bg-[url(/img/hero_cargo.webp)]" 
         heading="Cargo Lift" 
         breadcrumb={breadcrumb}
       />

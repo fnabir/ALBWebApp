@@ -13,21 +13,21 @@ export const metadata = {
   },
 };
 
-export default function Escalator() {
-  const breadcrumb: BreadcrumbInterface[] = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "Escalator"
-    }
-  ]
+const breadcrumb: BreadcrumbInterface[] = [
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "Escalator"
+  }
+]
 
+export default function Escalator() {
   return (
     <PageLayout>
       <HeroSection 
-        className="min-h-[calc(60vh-64px)] bg-[url(/img/hero_escalator_m.webp)] md:bg-[url(/img/hero_escalator.webp)]"
+        className="h-[calc(75vh-64px)] bg-[url(/img/hero_escalator_m.webp)] md:bg-[url(/img/hero_escalator.webp)]"
         heading="Escalator" 
         breadcrumb={breadcrumb}
       />

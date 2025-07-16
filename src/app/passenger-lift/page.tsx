@@ -13,20 +13,24 @@ export const metadata = {
   },
 };
 
-export default function PassengerLift() {
-  const breadcrumb: BreadcrumbInterface[] = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "Passenger Lift"
-    }
-  ]
+const breadcrumb: BreadcrumbInterface[] = [
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "Passenger Lift"
+  }
+]
 
+export default function PassengerLift() {
   return (
     <PageLayout>
-      <HeroSection img="hero_passenger_lift" heading="Passenger Lift" breadcrumb={breadcrumb}/>
+      <HeroSection 
+        className="h-[calc(75vh-64px)] bg-[url(/img/hero_passenger_m.webp)] md:bg-[url(/img/hero_passenger.webp)]" 
+        heading="Passenger Lift" 
+        breadcrumb={breadcrumb}
+      />
     </PageLayout>
   );
 }

@@ -26,7 +26,11 @@ export default function HospitalLift() {
 
   return (
     <PageLayout>
-      <HeroSection img="hero_hospital_lift" heading="Hospital Lift" breadcrumb={breadcrumb}/>
+      <HeroSection 
+        className="h-[calc(75vh-64px)] bg-[url(/img/hero_hospital_m.webp)] md:bg-[url(/img/hero_hospital.webp)]" 
+        heading="Hospital Lift" 
+        breadcrumb={breadcrumb}
+      />
     </PageLayout>
   );
 }
