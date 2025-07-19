@@ -13,21 +13,21 @@ export const metadata = {
   },
 };
 
-export default function HospitalLift() {
-  const breadcrumb: BreadcrumbInterface[] = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "Hospital Lift"
-    }
-  ]
+const breadcrumb: BreadcrumbInterface[] = [
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "Hospital Lift"
+  }
+]
 
+export default function HospitalLift() {
   return (
     <PageLayout>
       <HeroSection 
-        className="h-[calc(75vh-64px)] bg-[url(/img/hero_hospital_m.webp)] md:bg-[url(/img/hero_hospital.webp)]" 
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_hospital_m.webp)] md:bg-[url(/img/hero_hospital.webp)]" 
         heading="Hospital Lift" 
         breadcrumb={breadcrumb}
       />

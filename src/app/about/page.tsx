@@ -1,6 +1,8 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
+import { PageSection } from "@/components/page-section";
 import { BreadcrumbInterface } from "@/lib/interfaces";
+import Image from "next/image";
 
 export const metadata = {
   title: "About | Asian Lift Bangladesh",
@@ -13,16 +15,17 @@ export const metadata = {
   },
 };
 
+const breadcrumb: BreadcrumbInterface[] = [
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "About"
+  }
+]
+
 export default function About() {
-  const breadcrumb: BreadcrumbInterface[] = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "About"
-    }
-  ]
 
   return (
     <PageLayout>
@@ -32,6 +35,19 @@ export default function About() {
         heading="About Us"
         breadcrumb={breadcrumb}
       />
+
+      <PageSection heading="Asian Lift Bangladesh">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
+          <Image src="/img/products/passenger.webp"
+              alt="Passenger Lift"
+              fill
+              className="w-auto max-h-[300px] object-contain aspect-[9/16] col-span-1"
+                    />
+          <div className="max-w-2xl col-span-1">
+            Hello
+          </div>
+        </div>
+      </PageSection>
     </PageLayout>
   );
 }

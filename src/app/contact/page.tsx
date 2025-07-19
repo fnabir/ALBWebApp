@@ -29,7 +29,7 @@ export default function Contact() {
   return (
     <PageLayout>
       <HeroSection 
-        className="min-h-[calc(60vh-64px)] bg-[url(/img/hero_contact_m.webp)] md:bg-[url(/img/hero_contact.webp)]" 
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_contact_m.webp)] md:bg-[url(/img/hero_contact.webp)]" 
         badge="Phone, Email or Visit us" 
         heading="Contact Us" 
         breadcrumb={breadcrumb}

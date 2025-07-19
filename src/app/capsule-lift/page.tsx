@@ -27,7 +27,7 @@ export default function CapsuleLift() {
   return (
     <PageLayout>
       <HeroSection 
-        className="h-[calc(75vh-64px)] bg-[url(/img/hero_capsule_m.webp)] md:bg-[url(/img/hero_capsule.webp)]" 
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_capsule_m.webp)] md:bg-[url(/img/hero_capsule.webp)]" 
         heading="Capsule Lift" 
         breadcrumb={breadcrumb}
       />

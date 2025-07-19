@@ -27,7 +27,7 @@ export default function Escalator() {
   return (
     <PageLayout>
       <HeroSection 
-        className="h-[calc(75vh-64px)] bg-[url(/img/hero_escalator_m.webp)] md:bg-[url(/img/hero_escalator.webp)]"
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_escalator_m.webp)] md:bg-[url(/img/hero_escalator.webp)]"
         heading="Escalator" 
         breadcrumb={breadcrumb}
       />

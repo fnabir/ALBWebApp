@@ -143,7 +143,7 @@ export default function Services() {
 
       {services.map((item, index) => (
         <PageSection key={item.id} heading={item.name} id={item.id} subheading={item.description} className={item.background}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             <div className="col-span-1 mx-auto max-w-xl text-justify my-auto">
               {index % 2 == 0 ? item.details : item.svg}
             </div>

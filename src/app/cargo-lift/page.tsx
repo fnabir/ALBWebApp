@@ -27,7 +27,7 @@ export default function CargoLift() {
   return (
     <PageLayout>
       <HeroSection 
-        className="h-[calc(75vh-64px)] bg-[url(/img/hero_cargo_m.webp)] md:bg-[url(/img/hero_cargo.webp)]" 
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_cargo_m.webp)] md:bg-[url(/img/hero_cargo.webp)]" 
         heading="Cargo Lift" 
         breadcrumb={breadcrumb}
       />

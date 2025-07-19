@@ -27,7 +27,7 @@ export default function Dumbwaiter() {
   return (
     <PageLayout>
       <HeroSection 
-        className="h-[calc(75vh-64px)] bg-[url(/img/hero_dumbwaiter_m.webp)] md:bg-[url(/img/hero_dumbwaiter.webp)]" 
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_dumbwaiter_m.webp)] md:bg-[url(/img/hero_dumbwaiter.webp)]" 
         heading="Dumbwaiter" 
         breadcrumb={breadcrumb}
       />

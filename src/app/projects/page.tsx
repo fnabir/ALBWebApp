@@ -26,7 +26,11 @@ export default function Projects() {
 
   return (
     <PageLayout>
-      <HeroSection img="hero_projects" heading="Our Projects" breadcrumb={breadcrumb}/>
+      <HeroSection 
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_projects.webp)]" 
+        heading="Our Projects"
+        breadcrumb={breadcrumb}
+      />
     </PageLayout>
   );
 }
