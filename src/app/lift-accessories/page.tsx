@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Find high-quality lift accessories & elevator parts at Asian Lift Bangladesh. We offer a range of components for performance, safety & modern upgrades. Get expert solutions!",
   keywords:
-    "passenger lift Bangladesh, buy passenger elevator, residential lift installation, commercial passenger lift, elevator service Bangladesh, passenger lift maintenance, lift solutions for buildings, comfortable passenger lifts, Asian Lift passenger, lift repair Bangladesh",
+    "lift accessories Bangladesh, elevator parts Bangladesh, lift safety accessories, lift interior accessories, elevator modernization parts, lift door operators, elevator control systems, Asian Lift Bangladesh accessories, elevator spare parts Bangladesh, passenger lift maintenance, comfortable passenger lifts, lift repair Bangladesh",
   alternates: {
     canonical: "https://asianliftbd.com/lift-accessories",
   },
