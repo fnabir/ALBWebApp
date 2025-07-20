@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Navbar from "./navbar";
 import Loading from "./loading";
+import ClickToAction from "./cta";
 
 export default function PageLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   const [showLoader, setShowLoader] = useState(true);
@@ -26,6 +27,7 @@ export default function PageLayout({children,}: Readonly<{children: React.ReactN
     <>
       <Navbar />
       {children}
+      <ClickToAction />
       <Footer />
     </>
   )
