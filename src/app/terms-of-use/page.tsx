@@ -28,12 +28,12 @@ export default function TermsOfUse() {
   return (
     <PageLayout>
       <HeroSection 
-        className="min-h-[calc(40vh-64px)]"
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_terms_m.webp)] md:bg-[url(/img/hero_terms.webp)]"
         heading="Terms of Use"
         subheading="Last updated 01 Aug 2025" 
         breadcrumb={breadcrumb}/>
       
-      <section className="bg-muted/50 py-10 px-4 sm:px-8">
+      <section className="py-10 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto space-y-6">
 
           <p>These Terms of Use govern your use of our website and services. By accessing or using our site, you agree to be bound by these terms.</p>

@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
         subheading="Last updated 01 Aug 2025" 
         breadcrumb={breadcrumb}/>
 
-      <section className="bg-muted/50 py-10 px-4 sm:px-8">
+      <section className="py-10 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto space-y-6">
 
           <p>This Privacy Policy describes our policies on the collection, use, and disclosure of your information when you use the service. It also tells you about your privacy rights and how the law protects you.</p>
