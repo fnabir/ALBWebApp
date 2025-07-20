@@ -118,7 +118,7 @@ export default function ContactForm({className} : {className?:string}) {
             <Button type="submit" className="w-full">Submit</Button>
             <div className="text-center text-sm">
               By submitting you agree to our 
-              <Link href="/privacu-policy" className="text-blue-800 dark:text-blue-300 hover:text-blue-500 dark:hover:text-blue-500 pl-0.75">privacy policy</Link></div>
+              <Link href="/privacy-policy" className="text-blue-800 dark:text-blue-300 hover:text-blue-500 dark:hover:text-blue-500 pl-0.75">privacy policy</Link></div>
           </form>
         </Form>
       </CardContent>
