@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
   return (
     <PageLayout>
       <HeroSection 
-        className="min-h-[calc(40vh-64px)]"
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_privacy_m.webp)] md:bg-[url(/img/hero_privacy.webp)]"
         heading="Privacy Policy"
         subheading="Last updated 01 Aug 2025" 
         breadcrumb={breadcrumb}/>
