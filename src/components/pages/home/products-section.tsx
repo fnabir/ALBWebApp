@@ -24,8 +24,8 @@ const products = [
     image: "/img/products/capsule.webp",
   },
   {
-    label: "Escalators",
-    href: "/escalators",
+    label: "Escalator",
+    href: "/escalator",
     image: "/img/products/escalator.webp",
   },
   {
@@ -34,8 +34,8 @@ const products = [
     image: "/img/products/dumbwaiter.webp",
   },
   {
-    label: "Generators",
-    href: "/generators",
+    label: "Generator",
+    href: "/generator",
     image: "/img/products/generator.webp",
   },
   {
