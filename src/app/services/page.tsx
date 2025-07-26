@@ -3,7 +3,6 @@ import PageLayout from "@/components/page-layout";
 import { PageSection } from "@/components/page-section";
 import ScrollHandler from "@/components/scroll-handler";
 import { ScrollToSection } from "@/components/scroll-to-section";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 import { FaTools } from "react-icons/fa";

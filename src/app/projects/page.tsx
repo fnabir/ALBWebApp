@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
 import { PageSection } from "@/components/page-section";
-import { Card, CardHeader } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 import Image from "next/image";
 

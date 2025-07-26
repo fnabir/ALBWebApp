@@ -62,7 +62,7 @@ export default function TermsOfUse() {
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8">Disclaimer of Warranties</h2>
-          <p>The site and services are provided "as is" and "as available" without warranties of any kind. We do not warrant that the service will be uninterrupted, secure, or error-free.</p>
+          <p>The site and services are provided &quot;as is&quot; and &quot;as available&quot; without warranties of any kind. We do not warrant that the service will be uninterrupted, secure, or error-free.</p>
 
           <h2 className="text-2xl font-semibold mt-8">Limitation of Liability</h2>
           <p>Asian Lift Bangladesh shall not be liable for any indirect, incidental, special, consequential or punitive damages arising from your use of the service or website.</p>

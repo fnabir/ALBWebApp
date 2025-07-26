@@ -3,8 +3,6 @@ import PageLayout from "@/components/page-layout";
 import { PageSection } from "@/components/page-section";
 import { ProductCard } from "@/components/prtoduct-card";
 import { BreadcrumbInterface } from "@/lib/interfaces";
-import Image from "next/image";
-import { Md360, MdSearch } from "react-icons/md";
 
 export const metadata = {
   title: "Passenger Lift | Asian Lift Bangladesh",
