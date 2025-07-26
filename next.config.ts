@@ -27,8 +27,16 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'shopsource.singoo.cc',
       },
+      {
+        protocol: 'https',
+        hostname: 'srh.spb.ru',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.globalso.com',
+      },
     ],
-  },
+  }
 };
 
 export default nextConfig;
