@@ -1,5 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
+import { PageSection } from "@/components/page-section";
+import { ProductCard } from "@/components/prtoduct-card";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 
 export const metadata = {
@@ -23,6 +25,17 @@ const breadcrumb: BreadcrumbInterface[] = [
   }
 ]
 
+const lifts : {src:string, label:string, href?:string, type?:string}[] = [
+  {
+    label: "RJ-017",
+    src: "https://cdn.globalso.com/srh-elevator/GRB-2019.3.26-11.png",
+  },
+  {
+    label: "RJ-021",
+    src: "https://cdn.globalso.com/srh-elevator/GRB-2019.3.26-12.png",
+  },
+]
+
 export default function HospitalLift() {
   return (
     <PageLayout>
@@ -31,6 +44,22 @@ export default function HospitalLift() {
         heading="Hospital Lift" 
         breadcrumb={breadcrumb}
       />
+
+      <PageSection heading="Catalogues">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {
+            lifts.map((lift, index) => (
+              <ProductCard key={index}
+                src={lift.src}
+                label={lift.label}
+                href={lift.href}
+                type={lift.type}
+                aspectRatio="aspect-square"
+              />
+            ))
+          }
+        </div>
+      </PageSection>
     </PageLayout>
   );
 }

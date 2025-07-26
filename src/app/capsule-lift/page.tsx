@@ -1,5 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
+import { PageSection } from "@/components/page-section";
+import { ProductCard } from "@/components/prtoduct-card";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 
 export const metadata = {
@@ -13,17 +15,44 @@ export const metadata = {
   },
 };
 
-export default function CapsuleLift() {
-  const breadcrumb: BreadcrumbInterface[] = [
-    {
-      label: "Home",
-      href: "/"
-    },
-    {
-      label: "Capsule Lift"
-    }
-  ]
+const breadcrumb: BreadcrumbInterface[] = [
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "Capsule Lift"
+  }
+]
 
+const lifts : {src:string, label:string, href?:string, type?:string}[] = [
+  {
+    label: "MD-G001",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_G001-50.jpg",
+  },
+  {
+    label: "MD-G002",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_G002.jpg",
+  },
+  {
+    label: "MD-G003",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_G003.jpg",
+  },
+  {
+    label: "MD-G004",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_G004.jpg",
+  },
+  {
+    label: "MD-G005",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_G005.jpg",
+  },
+  {
+    label: "MD-G006",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_G006.jpg",
+  },
+]
+
+export default function CapsuleLift() {
   return (
     <PageLayout>
       <HeroSection 
@@ -31,6 +60,22 @@ export default function CapsuleLift() {
         heading="Capsule Lift" 
         breadcrumb={breadcrumb}
       />
+
+      <PageSection heading="Catalogues">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-12">
+          {
+            lifts.map((lift, index) => (
+              <ProductCard key={index}
+                src={lift.src}
+                label={lift.label}
+                href={lift.href}
+                type={lift.type}
+                aspectRatio="aspect-[300/500]"
+              />
+            ))
+          }
+        </div>
+      </PageSection>
     </PageLayout>
   );
 }

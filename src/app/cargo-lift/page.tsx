@@ -1,5 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
+import { PageSection } from "@/components/page-section";
+import { ProductCard } from "@/components/prtoduct-card";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 
 export const metadata = {
@@ -23,6 +25,17 @@ const breadcrumb: BreadcrumbInterface[] = [
   }
 ]
 
+const lifts : {src:string, label:string, href?:string, type?:string}[] = [
+  {
+    label: "MD-HC03",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_HC03.jpg",
+  },
+  {
+    label: "MD-HC04",
+    src: "http://en.mdunks.com/uploads/allimg/181225/MD_HC04.jpg",
+  },
+]
+
 export default function CargoLift() {
   return (
     <PageLayout>
@@ -31,6 +44,22 @@ export default function CargoLift() {
         heading="Cargo Lift" 
         breadcrumb={breadcrumb}
       />
+
+      <PageSection heading="Catalogues">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {
+            lifts.map((lift, index) => (
+              <ProductCard key={index}
+                src={lift.src}
+                label={lift.label}
+                href={lift.href}
+                type={lift.type}
+                aspectRatio="aspect-[570/485]"
+              />
+            ))
+          }
+        </div>
+      </PageSection>
     </PageLayout>
   );
 }
