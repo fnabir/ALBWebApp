@@ -19,13 +19,22 @@ export const WorkOptions: OptionsInterface[] = [
 ];
 
 export const PassengerLoadOptions: OptionsInterface[] = [
-  {value: '6/350'},
-  {value: '8/480'},
-  {value: '10/600'}
+  {value: '6/450'},
+  {value: '8/550'},
+  {value: '9/600'},
+  {value: '10/700'},
+  {value: '11/750'},
+  {value: '13/900'},
+  {value: '15/1000'},
+  {value: '17/1150'},
+  {value: '20/1350'},
+  {value: '24/1600'},
 ]
 
 export const CargoLoadOptions: OptionsInterface[] = [
-  {value: '500'},
   {value: '1000'},
-  {value: '1500'}
+  {value: '1500'},
+  {value: '2000'},
+  {value: '3000'},
+  {value: '5000'},
 ]
