@@ -62,21 +62,21 @@ const lifts = [
   },
   {
     label: "RJ-011",
-    src: "https://srh.spb.ru/wp-content/uploads/2020/03/PRN_RJ-011-1-729x1024.jpg"
+    src: "/img/products/RJ-011.webp"
   },
   {
     label: "RJ-013",
-    src: "https://srh.spb.ru/wp-content/uploads/2020/03/PRN_RJ-013-2.jpg",
+    src: "/img/products/RJ-013.webp",
     type: "360",
     href: "http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ013/"
   },
   {
     label: "RJ-016",
-    src: "https://srh.spb.ru/wp-content/uploads/2020/03/PRN_rj016-1-706x1024.jpg"
+    src: "/img/products/RJ-016.webp"
   },
   {
     label: "RJ-039",
-    src: "https://srh.spb.ru/wp-content/uploads/2020/03/PRN_RJ039-1-706x1024.jpg"
+    src: "/img/products/RJ-039.webp"
   }
 ]
 
