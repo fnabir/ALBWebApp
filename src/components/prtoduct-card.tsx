@@ -19,8 +19,8 @@ export function ProductCard({src, label, href, type, aspectRatio} :
         />
 
         <div className="absolute bottom-0 left-0 w-full h-full
-                        bg-gradient-to-t from-black/80 to-transparent
-                        group-hover:bg-black/40
+                        bg-gradient-to-t from-white/80 dark:from-black/80 to-transparent
+                        group-hover:bg-white/40 dark:group-hover:bg-black/40
                         transition-all duration-500
                         pointer-events-none"
         />
@@ -37,9 +37,9 @@ export function ProductCard({src, label, href, type, aspectRatio} :
         }
 
         <div className="absolute w-full left-1/2 transform -translate-x-1/2
-                        top-[85%] group-hover:top-1/2
+                        bottom-[5%] group-hover:bottom-[40%]
                         transition-all duration-500
-                        text-white text-2xl tracking-tight font-semibold text-center">
+                        text-2xl tracking-tight font-semibold text-center">
           {label}
         </div>
       </div>
