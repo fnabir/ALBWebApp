@@ -2,7 +2,7 @@ import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
 import { PageSection } from "@/components/page-section";
 import { ProductCard } from "@/components/prtoduct-card";
-import { BreadcrumbInterface, ProductInterface } from "@/lib/interfaces";
+import { BreadcrumbInterface } from "@/lib/interfaces";
 
 export const metadata = {
   title: "Lift Accessories | Asian Lift Bangladesh",
