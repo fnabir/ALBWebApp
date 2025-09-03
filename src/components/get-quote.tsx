@@ -89,16 +89,17 @@ export default function GetQuote() {
       const result = await response.json()
       if (result.success) {
         await addQuoteForm(data);
-        toast.success("Form submitted successfully!");
         form.reset()
         recaptchaRef.current?.reset()
+        setOpen(false);
+        toast.success("Form submitted successfully!");
       } else {
         toast.error("Failed to verify reCAPTCHA. Refresh the page and try again.")
       }
     } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   }
 

@@ -64,9 +64,9 @@ export default function ContactForm({className} : {className?:string}) {
       const result = await response.json()
       if (result.success) {
         await addContactForm(data);
-        toast.success("Form submitted successfully!");
         form.reset()
-        recaptchaRef.current?.reset()
+        recaptchaRef.current?.reset();
+        toast.success("Form submitted successfully!");
       } else {
         toast.error("Failed to verify reCAPTCHA. Refresh the page and try again.")
       }
