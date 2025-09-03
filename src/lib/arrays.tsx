@@ -33,7 +33,6 @@ export const PassengerLoadOptions: OptionsInterface[] = [
 
 export const CargoLoadOptions: OptionsInterface[] = [
   {value: '1000'},
-  {value: '1500'},
   {value: '2000'},
   {value: '3000'},
   {value: '5000'},
