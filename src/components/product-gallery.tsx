@@ -47,7 +47,7 @@ export function ProductGallery({
       </div>
 
       <Dialog open={selectedIndex !== null} onOpenChange={close}>
-        <DialogContent className="border-blue-500 border-2 max-w-none! w-[75%] lg:w-[50%]">
+        <DialogContent className="border-blue-500 border-2 w-full max-w-[88%] lg:max-w-[50%]">
           {selectedIndex !== null && (
             <>
               <DialogTitle className="text-2xl font-semibold text-center">
