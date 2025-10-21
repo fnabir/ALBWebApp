@@ -1,7 +1,8 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
 import { PageSection } from "@/components/page-section";
-import { ProductCard } from "@/components/prtoduct-card";
+import { ProductCard } from "@/components/product-card";
+import { ProductGallery } from "@/components/product-gallery";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 
 export const metadata = {
@@ -25,16 +26,149 @@ const breadcrumb: BreadcrumbInterface[] = [
   }
 ]
 
-const ceilings = ["RD-006", "RD-011", "RD-013", "RD-014", "RD-015", "RD-016", "RD-017", "RD-018"]
+const ceilings = [
+  {
+    label: "RD-006"
+  },
+  {
+    label: "RD-011"
+  }, 
+  {
+    label: "RD-013"
+  },
+  {
+    label: "RD-014"
+  },
+  {
+    label: "RD-015"
+  },
+  {
+    label: "RD-016"
+  },
+  {
+    label: "RD-017"
+  },
+  {
+    label: "RD-018"
+  }
+]
 
-const floors = ["PRV002", "PRV004", "PRV008", "PRV010", "PRV011", "PRV012", 
-                "PRV013", "PRV014", "PRV015", "PRV016", "PRV017", "PRV018",
-                "PRV019", "PRV020", "PRV021", "PRV022", "PRV023", "PRV024",
-                "PRV025", "PRV026", "PRV027", "PRV028", "PRV029", "PRV030"]
+const floors = [
+  {
+    label: "PRV002"
+  },
+  {
+    label: "PRV004"
+  },
+  {
+    label: "PRV008"
+  }, 
+  {
+    label: "PRV010"
+  },
+  {
+    label: "PRV011"
+  },
+  {
+    label: "PRV012"
+  },
+  {
+    label: "PRV013"
+  },
+  {
+    label: "PRV014"
+  },
+  {
+    label: "PRV015"
+  },
+  {
+    label: "PRV016"
+  },
+  {
+    label: "PRV017"
+  },
+  {
+    label: "PRV018"
+  },
+  {
+    label: "PRV019"
+  },
+  {
+    label: "PRV020"
+  },
+  {
+    label: "PRV021"
+  },
+  {
+    label: "PRV022"
+  },
+  {
+    label: "PRV023"
+  },
+  {
+    label: "PRV024"
+  },
+  {
+    label: "PRV025"
+  },
+  {
+    label: "PRV026"
+  },
+  {
+    label: "PRV027"
+  },
+  {
+    label: "PRV028"
+  },
+  {
+    label: "PRV029"
+  },
+  {
+    label: "PRV030"
+  }
+]
 
-const handrails = ["RF-001", "RF-002", "RF-003", "RF-004", "RF-005", "RF-007"]
+const handrails = [
+  {
+    label: "RF-001"
+  },
+  {
+    label: "RF-002"
+  }, 
+  {
+    label: "RF-003"
+  },
+  {
+    label: "RF-004"
+  },
+  {
+    label: "RF-005"
+  },
+  {
+    label: "RF-007"
+  }
+]
 
-const doors = ["RT-011", "RT-012", "RT-014", "RT-015", "RT-016", "RT-100"]
+const doors = [
+  {
+    label: "RT-011"
+  }, 
+  {
+    label: "RT-012"
+  },
+  {
+    label: "RT-014"
+  },
+  {
+    label: "RT-015"
+  },
+  {
+    label: "RT-016"
+  },
+  {
+    label: "RT-100"
+  }
+]
 
 export default function LiftAccessories() {
   return (
@@ -46,61 +180,31 @@ export default function LiftAccessories() {
       />
 
       <PageSection heading="Ceilings">
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12">
-          {
-            ceilings.map((item, index) => (
-              <ProductCard key={index}
-                src={`/img/products/${item}.webp`}
-                label={item}
-                aspectRatio="aspect-[300/100]"
-              />
-            ))
-          }
-        </div>
+        <ProductGallery className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12"
+                        lifts={ceilings} 
+                        category="Ceilings" 
+                        aspectRatio="aspect-[300/100]"/>
       </PageSection>
 
-      <PageSection heading="Floors"
-                  className="bg-muted/50">
-        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-8">
-          {
-            floors.map((item, index) => (
-              <ProductCard key={index}
-                src={`/img/products/${item}.webp`}
-                label={item}
-                aspectRatio="aspect-square"
-              />
-            ))
-          }
-        </div>
+      <PageSection heading="Floors" className="bg-muted/50">
+        <ProductGallery className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-8"
+                        lifts={floors} 
+                        category="Floors" 
+                        aspectRatio="aspect-square"/>
       </PageSection>
 
       <PageSection heading="Handrails">
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-8">
-          {
-            handrails.map((item, index) => (
-              <ProductCard key={index}
-                src={`/img/products/${item}.webp`}
-                label={item}
-                aspectRatio="aspect-[5/2]"
-              />
-            ))
-          }
-        </div>
+        <ProductGallery className="grid grid-cols-2 lg:grid-cols-6 gap-8"
+                        lifts={handrails} 
+                        category="Handrails" 
+                        aspectRatio="aspect-[5/2]"/>
       </PageSection>
 
-      <PageSection heading="Doors"
-                  className="bg-muted/50">
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-8">
-          {
-            doors.map((item, index) => (
-              <ProductCard key={index}
-                src={`/img/products/${item}.webp`}
-                label={item}
-                aspectRatio="aspect-[3/4]"
-              />
-            ))
-          }
-        </div>
+      <PageSection heading="Doors" className="bg-muted/50">
+        <ProductGallery className="grid grid-cols-2 lg:grid-cols-6 gap-8"
+                        lifts={doors} 
+                        category="Doors" 
+                        aspectRatio="aspect-[3/4]"/>
       </PageSection>
     </PageLayout>
   );

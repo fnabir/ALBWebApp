@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
 import { PageSection } from "@/components/page-section";
-import { ProductCard } from "@/components/prtoduct-card";
+import { ProductGallery } from "@/components/product-gallery";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 
 export const metadata = {
@@ -18,19 +18,19 @@ export const metadata = {
 const breadcrumb: BreadcrumbInterface[] = [
   {
     label: "Home",
-    href: "/"
+    href: "/",
   },
   {
-    label: "Passenger Lift"
-  }
-]
+    label: "Passenger Lift",
+  },
+];
 
 const lifts = [
   {
     label: "MD-K001",
     src: "http://en.mdunks.com/uploads/allimg/181224/MD_K001-50.jpg",
     href: "",
-    type: ""
+    type: "",
   },
   {
     label: "MD-K002",
@@ -62,47 +62,40 @@ const lifts = [
   },
   {
     label: "RJ-011",
-    src: "/img/products/RJ-011.webp"
+    src: "/img/products/RJ-011.webp",
   },
   {
     label: "RJ-013",
     src: "/img/products/RJ-013.webp",
     type: "360",
-    href: "http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ013/"
+    href: "http://www.shinesweb.com/quanjing/pre/xinglicai/srh/RJ013/",
   },
   {
     label: "RJ-016",
-    src: "/img/products/RJ-016.webp"
+    src: "/img/products/RJ-016.webp",
   },
   {
     label: "RJ-039",
-    src: "/img/products/RJ-039.webp"
-  }
-]
+    src: "/img/products/RJ-039.webp",
+  },
+];
 
 export default function PassengerLift() {
   return (
     <PageLayout>
-      <HeroSection 
-        className="h-[calc(60vh-64px)] bg-[url(/img/hero_passenger_m.webp)] md:bg-[url(/img/hero_passenger.webp)]" 
-        heading="Passenger Lift" 
+      <HeroSection
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_passenger_m.webp)] md:bg-[url(/img/hero_passenger.webp)]"
+        heading="Passenger Lift"
         breadcrumb={breadcrumb}
       />
 
       <PageSection heading="Catalogues">
-        <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-12">
-          {
-            lifts.map((lift, index) => (
-              <ProductCard key={index}
-                src={lift.src}
-                label={lift.label}
-                href={lift.href}
-                type={lift.type}
-                aspectRatio="aspect-[300/475]"
-              />
-            ))
-          }
-        </div>
+        <ProductGallery
+          className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-12"
+          lifts={lifts}
+          category="Passenger Lift"
+          aspectRatio="aspect-[300/475]"
+        />
       </PageSection>
     </PageLayout>
   );

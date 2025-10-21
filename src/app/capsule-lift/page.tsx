@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import PageLayout from "@/components/page-layout";
 import { PageSection } from "@/components/page-section";
-import { ProductCard } from "@/components/prtoduct-card";
+import { ProductGallery } from "@/components/product-gallery";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 
 export const metadata = {
@@ -62,19 +62,10 @@ export default function CapsuleLift() {
       />
 
       <PageSection heading="Catalogues">
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-12">
-          {
-            lifts.map((lift, index) => (
-              <ProductCard key={index}
-                src={lift.src}
-                label={lift.label}
-                href={lift.href}
-                type={lift.type}
-                aspectRatio="aspect-[300/500]"
-              />
-            ))
-          }
-        </div>
+        <ProductGallery className="grid grid-cols-2 lg:grid-cols-5 gap-12"
+                        lifts={lifts} 
+                        category="Passenger Lift" 
+                        aspectRatio="aspect-[300/500]"/>
       </PageSection>
     </PageLayout>
   );
