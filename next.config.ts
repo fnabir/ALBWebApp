@@ -1,4 +1,4 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
       {
         protocol: 'http',
         hostname: 'en.mdunks.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.sicoritaly.com',
       },
       {
         protocol: 'http',
@@ -32,7 +36,7 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.globalso.com',
       },
     ],
-  },
+  }
 };
 
 export default nextConfig;
