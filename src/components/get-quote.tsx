@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import {
   Dialog,
   DialogClose,
@@ -140,97 +141,121 @@ export default function GetQuote() {
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button className="pr-2">
-          <MdRequestQuote className="size-6" /> Get Quote
-        </Button>
-      </DialogTrigger>
-      <DialogContent className={'border-2 border-blue-500'}>
-        <DialogHeader>
-          <DialogTitle>Get Quote</DialogTitle>
-          <DialogDescription className="hidden lg:flex">
-            Provide as much information you can so we can provide proper
-            quotation.
-          </DialogDescription>
-        </DialogHeader>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
-            <InputText form={form} field="name" label="Full Name" required />
-            <InputText
-              form={form}
-              field="contact"
-              label="Contact Info"
-              placeholder="Mobile Number/Email Address"
-              required
-            />
-            <InputText
-              form={form}
-              field="address"
-              label="Address"
-              placeholder="Project Address"
-              required
-            />
-            <InputSelect
-              form={form}
-              field="product"
-              label="Product"
-              placeholder="Select Product"
-              options={ProductOptions}
-              required
-            />
-            <InputSelect
-              form={form}
-              field="work"
-              label="Work Type"
-              placeholder="Select Work Type"
-              options={WorkOptions}
-              required
-            />
-            <InputText
-              form={form}
-              field="unit"
-              label="Number of Lift(s)"
-              placeholder="Number of Lift(s)"
-            />
-            <InputText
-              form={form}
-              field="floor"
-              label="Floor/Stop"
-              placeholder="6/6"
-            />
-            <InputSelect
-              form={form}
-              field="person"
-              label={personLabel}
-              placeholder={personPlaceholder}
-              options={personOptions}
-            />
-            <div className="w-contain flex items-center justify-center my-6">
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+    <>
+      {open &&
+        createPortal(
+          <div
+            className="fixed inset-0 bg-black/50 z-40"
+            onClick={() => setOpen(false)}
+          />,
+          document.body,
+        )}
+      <Dialog
+        modal={false}
+        open={open}
+        onOpenChange={(isOpen) => {
+          setOpen(isOpen);
+          if (!isOpen) {
+            recaptchaRef.current?.reset();
+          }
+        }}
+      >
+        <DialogTrigger asChild>
+          <Button className="pr-2">
+            <MdRequestQuote className="size-6" /> Get Quote
+          </Button>
+        </DialogTrigger>
+        <DialogContent
+          className={'border-2 border-blue-500'}
+          onInteractOutside={(e) => e.preventDefault()}
+        >
+          <DialogHeader>
+            <DialogTitle>Get Quote</DialogTitle>
+            <DialogDescription className="hidden lg:flex">
+              Provide as much information you can so we can provide proper
+              quotation.
+            </DialogDescription>
+          </DialogHeader>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
+              <InputText form={form} field="name" label="Full Name" required />
+              <InputText
+                form={form}
+                field="contact"
+                label="Contact Info"
+                placeholder="Mobile Number/Email Address"
+                required
               />
-            </div>
-            <DialogFooter
-              className={'mt-2 lg:mt-4 flex flex-row justify-center!'}
-            >
-              <DialogClose asChild>
-                <Button variant="destructive">Close</Button>
-              </DialogClose>
-              <Button
-                type="reset"
-                variant="accent"
-                onClick={() => form.reset()}
+              <InputText
+                form={form}
+                field="address"
+                label="Address"
+                placeholder="Project Address"
+                required
+              />
+              <InputSelect
+                form={form}
+                field="product"
+                label="Product"
+                placeholder="Select Product"
+                options={ProductOptions}
+                required
+              />
+              <InputSelect
+                form={form}
+                field="work"
+                label="Work Type"
+                placeholder="Select Work Type"
+                options={WorkOptions}
+                required
+              />
+              <InputText
+                form={form}
+                field="unit"
+                label="Number of Lift(s)"
+                placeholder="Number of Lift(s)"
+              />
+              <InputText
+                form={form}
+                field="floor"
+                label="Floor/Stop"
+                placeholder="6/6"
+              />
+              <InputSelect
+                form={form}
+                field="person"
+                label={personLabel}
+                placeholder={personPlaceholder}
+                options={personOptions}
+              />
+              {open && (
+                <div className="w-contain flex items-center justify-center my-6">
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                  />
+                </div>
+              )}
+              <DialogFooter
+                className={'mt-2 lg:mt-4 flex flex-row justify-center!'}
               >
-                Reset
-              </Button>
-              <Button type="submit">Submit</Button>
-            </DialogFooter>
-          </form>
-        </Form>
-      </DialogContent>
-    </Dialog>
+                <DialogClose asChild>
+                  <Button variant="destructive">Close</Button>
+                </DialogClose>
+                <Button
+                  type="reset"
+                  variant="accent"
+                  onClick={() => form.reset()}
+                >
+                  Reset
+                </Button>
+                <Button type="submit">Submit</Button>
+              </DialogFooter>
+            </form>
+          </Form>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 }
 
