@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { ProductCard } from '@/components/product-card';
-import Image from 'next/image';
-import { DialogDescription, DialogTitle } from '@radix-ui/react-dialog';
-import { ProductInterface } from '@/lib/interfaces';
-import { Skeleton } from '@/components/ui/skeleton';
-import Loading from './loading';
+import { useState } from "react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { ProductCard } from "@/components/product-card";
+import Image from "next/image";
+import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
+import { ProductInterface } from "@/lib/interfaces";
+import { Skeleton } from "@/components/ui/skeleton";
+import Loading from "./loading";
 
 export function ProductGallery({
   lifts,
@@ -40,7 +40,7 @@ export function ProductGallery({
             type={lift.type}
             aspectRatio={aspectRatio}
             onClick={() => {
-              if (lift.type !== '360') setSelectedIndex(index);
+              if (lift.type !== "360") setSelectedIndex(index);
             }}
           />
         ))}
@@ -72,9 +72,10 @@ export function ProductGallery({
                   }
                   alt={lifts[selectedIndex].label}
                   fill
-                  onLoadingComplete={() => setIsImageLoaded(true)}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  onLoad={() => setIsImageLoaded(true)}
                   className={`object-contain transition-opacity duration-500 ${
-                    isImageLoaded ? 'opacity-100' : 'opacity-0'
+                    isImageLoaded ? "opacity-100" : "opacity-0"
                   }`}
                 />
               </div>

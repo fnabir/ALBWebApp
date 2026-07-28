@@ -1,17 +1,20 @@
 import {
-	Breadcrumb,
-	BreadcrumbItem,
-	BreadcrumbLink,
-	BreadcrumbList,
-	BreadcrumbPage,
-	BreadcrumbSeparator,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import React, {FC} from "react";
+import React, { FC } from "react";
 import { BreadcrumbInterface } from "@/lib/interfaces";
 
-const BreadcrumbSection: FC<{ breadcrumb: BreadcrumbInterface[] }> = ({breadcrumb}) => {
-	return (
-		<Breadcrumb className={"flex-auto"}>
+const BreadcrumbSection: FC<{ breadcrumb: BreadcrumbInterface[] }> = ({
+  breadcrumb,
+}) => {
+  breadcrumb = [{ label: "Home", href: "/" }, ...breadcrumb];
+  return (
+    <Breadcrumb className={"flex-auto"}>
       <BreadcrumbList>
         {breadcrumb.map((crumb, index) => (
           <React.Fragment key={index}>
@@ -27,7 +30,7 @@ const BreadcrumbSection: FC<{ breadcrumb: BreadcrumbInterface[] }> = ({breadcrum
         ))}
       </BreadcrumbList>
     </Breadcrumb>
-	)
-}
+  );
+};
 
 export default BreadcrumbSection;
