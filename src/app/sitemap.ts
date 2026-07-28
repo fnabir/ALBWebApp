@@ -1,12 +1,13 @@
-import type { MetadataRoute } from "next"
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://asianliftbd.com"
+  const baseUrl = "https://asianliftbd.com";
   const lastModified = new Date();
 
   return [
     {
       url: baseUrl,
+      lastModified,
       changeFrequency: "weekly",
       priority: 1,
     },
@@ -100,5 +101,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
-  ]
+  ];
 }
