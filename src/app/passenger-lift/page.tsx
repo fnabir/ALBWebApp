@@ -17,10 +17,6 @@ export const metadata = {
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "Passenger Lift",
   },
 ];

@@ -103,10 +103,6 @@ const teamMembers = [
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "About",
   },
 ];

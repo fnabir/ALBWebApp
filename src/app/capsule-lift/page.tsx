@@ -17,15 +17,11 @@ export const metadata = {
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/"
+    label: "Capsule Lift",
   },
-  {
-    label: "Capsule Lift"
-  }
-]
+];
 
-const lifts : {src:string, label:string, href?:string, type?:string}[] = [
+const lifts: { src: string; label: string; href?: string; type?: string }[] = [
   {
     label: "MD-G001",
     src: "http://en.mdunks.com/uploads/allimg/181225/MD_G001-50.jpg",
@@ -50,22 +46,24 @@ const lifts : {src:string, label:string, href?:string, type?:string}[] = [
     label: "MD-G006",
     src: "http://en.mdunks.com/uploads/allimg/181225/MD_G006.jpg",
   },
-]
+];
 
 export default function CapsuleLift() {
   return (
     <PageLayout>
-      <HeroSection 
-        className="h-[calc(60vh-64px)] bg-[url(/img/hero_capsule_m.webp)] md:bg-[url(/img/hero_capsule.webp)]" 
-        heading="Capsule Lift" 
+      <HeroSection
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_capsule_m.webp)] md:bg-[url(/img/hero_capsule.webp)]"
+        heading="Capsule Lift"
         breadcrumb={breadcrumb}
       />
 
       <PageSection heading="Catalogues">
-        <ProductGallery className="grid grid-cols-2 lg:grid-cols-5 gap-12"
-                        lifts={lifts} 
-                        category="Passenger Lift" 
-                        aspectRatio="aspect-[300/500]"/>
+        <ProductGallery
+          className="grid grid-cols-2 lg:grid-cols-5 gap-12"
+          lifts={lifts}
+          category="Passenger Lift"
+          aspectRatio="aspect-[300/500]"
+        />
       </PageSection>
     </PageLayout>
   );

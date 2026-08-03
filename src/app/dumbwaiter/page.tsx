@@ -15,20 +15,16 @@ export const metadata = {
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/"
+    label: "Dumbwaiter",
   },
-  {
-    label: "Dumbwaiter"
-  }
-]
+];
 
 export default function Dumbwaiter() {
   return (
     <PageLayout>
-      <HeroSection 
-        className="h-[calc(60vh-64px)] bg-[url(/img/hero_dumbwaiter_m.webp)] md:bg-[url(/img/hero_dumbwaiter.webp)]" 
-        heading="Dumbwaiter" 
+      <HeroSection
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_dumbwaiter_m.webp)] md:bg-[url(/img/hero_dumbwaiter.webp)]"
+        heading="Dumbwaiter"
         breadcrumb={breadcrumb}
       />
     </PageLayout>

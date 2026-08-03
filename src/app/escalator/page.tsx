@@ -15,20 +15,16 @@ export const metadata = {
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/"
+    label: "Escalator",
   },
-  {
-    label: "Escalator"
-  }
-]
+];
 
 export default function Escalator() {
   return (
     <PageLayout>
-      <HeroSection 
+      <HeroSection
         className="h-[calc(60vh-64px)] bg-[url(/img/hero_escalator_m.webp)] md:bg-[url(/img/hero_escalator.webp)]"
-        heading="Escalator" 
+        heading="Escalator"
         breadcrumb={breadcrumb}
       />
     </PageLayout>

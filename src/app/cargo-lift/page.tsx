@@ -17,15 +17,11 @@ export const metadata = {
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/"
+    label: "Cargo Lift",
   },
-  {
-    label: "Cargo Lift"
-  }
-]
+];
 
-const lifts : ProductInterface[] = [
+const lifts: ProductInterface[] = [
   {
     label: "MD-HC03",
     src: "http://en.mdunks.com/uploads/allimg/181225/MD_HC03.jpg",
@@ -34,22 +30,24 @@ const lifts : ProductInterface[] = [
     label: "MD-HC04",
     src: "http://en.mdunks.com/uploads/allimg/181225/MD_HC04.jpg",
   },
-]
+];
 
 export default function CargoLift() {
   return (
     <PageLayout>
-      <HeroSection 
-        className="h-[calc(60vh-64px)] bg-[url(/img/hero_cargo_m.webp)] md:bg-[url(/img/hero_cargo.webp)]" 
-        heading="Cargo Lift" 
+      <HeroSection
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_cargo_m.webp)] md:bg-[url(/img/hero_cargo.webp)]"
+        heading="Cargo Lift"
         breadcrumb={breadcrumb}
       />
 
       <PageSection heading="Catalogues">
-        <ProductGallery className="grid grid-cols-1 lg:grid-cols-3 gap-12"
-                        lifts={lifts} 
-                        category="Cargo Lift" 
-                        aspectRatio="aspect-[570/485]"/>
+        <ProductGallery
+          className="grid grid-cols-1 lg:grid-cols-3 gap-12"
+          lifts={lifts}
+          category="Cargo Lift"
+          aspectRatio="aspect-[570/485]"
+        />
       </PageSection>
     </PageLayout>
   );

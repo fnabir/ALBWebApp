@@ -15,20 +15,16 @@ export const metadata = {
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/"
+    label: "Generator",
   },
-  {
-    label: "Generator"
-  }
-]
+];
 
 export default function Generator() {
   return (
     <PageLayout>
-      <HeroSection 
-        className="h-[calc(60vh-64px)] bg-[url(/img/hero_generator_m.webp)] md:bg-[url(/img/hero_generator.webp)]" 
-        heading="Generator" 
+      <HeroSection
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_generator_m.webp)] md:bg-[url(/img/hero_generator.webp)]"
+        heading="Generator"
         breadcrumb={breadcrumb}
       />
     </PageLayout>

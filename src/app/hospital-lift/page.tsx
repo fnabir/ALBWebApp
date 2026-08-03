@@ -17,15 +17,11 @@ export const metadata = {
 
 const breadcrumb: BreadcrumbInterface[] = [
   {
-    label: "Home",
-    href: "/"
+    label: "Hospital Lift",
   },
-  {
-    label: "Hospital Lift"
-  }
-]
+];
 
-const lifts : {src:string, label:string, href?:string, type?:string}[] = [
+const lifts: { src: string; label: string; href?: string; type?: string }[] = [
   {
     label: "RJ-017",
     src: "https://cdn.globalso.com/srh-elevator/GRB-2019.3.26-11.png",
@@ -34,22 +30,24 @@ const lifts : {src:string, label:string, href?:string, type?:string}[] = [
     label: "RJ-021",
     src: "https://cdn.globalso.com/srh-elevator/GRB-2019.3.26-12.png",
   },
-]
+];
 
 export default function HospitalLift() {
   return (
     <PageLayout>
-      <HeroSection 
-        className="h-[calc(60vh-64px)] bg-[url(/img/hero_hospital_m.webp)] md:bg-[url(/img/hero_hospital.webp)]" 
-        heading="Hospital Lift" 
+      <HeroSection
+        className="h-[calc(60vh-64px)] bg-[url(/img/hero_hospital_m.webp)] md:bg-[url(/img/hero_hospital.webp)]"
+        heading="Hospital Lift"
         breadcrumb={breadcrumb}
       />
 
       <PageSection heading="Catalogues">
-        <ProductGallery className="grid grid-cols-1 lg:grid-cols-3 gap-12"
-                        lifts={lifts} 
-                        category="Hospital Lift" 
-                        aspectRatio="aspect-square"/>
+        <ProductGallery
+          className="grid grid-cols-1 lg:grid-cols-3 gap-12"
+          lifts={lifts}
+          category="Hospital Lift"
+          aspectRatio="aspect-square"
+        />
       </PageSection>
     </PageLayout>
   );
